@@ -50,8 +50,14 @@
     @apply text-lg leading-tight font-black text-teal-800 tabular-nums sm:text-xl;
   }
 
-  .face-card {
+.scene-frame {
+    @apply w-full overflow-hidden rounded-3xl border-4 border-warm-200 bg-warm-50 shadow-lg;
     animation: pop-in 0.25s ease-out;
+  }
+
+  .scene-image {
+    @apply mx-auto block w-full object-cover;
+    aspect-ratio: 16 / 9;
   }
 
   .option-btn {
@@ -76,7 +82,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .face-card,
+  .scene-frame,
   .option-btn,
   .primary-btn {
     animation: none !important;

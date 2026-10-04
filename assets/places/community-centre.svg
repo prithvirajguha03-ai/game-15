@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A community centre with a clock tower, banner and steps outside">
+  <defs>
+    <linearGradient id="s9sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#bcd8f0"/><stop offset="1" stop-color="#f0f8fd"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#s9sky)"/>
+  <rect y="344" width="800" height="106" fill="#c6bda9"/>
+  <path d="M0 344 h800" stroke="#a99f8c" stroke-width="4"/>
+
+  <g>
+    <rect x="180" y="180" width="440" height="164" fill="#f0e6d6"/>
+    <rect x="180" y="180" width="440" height="14" fill="#d3c3a9"/>
+    <rect x="330" y="110" width="140" height="72" fill="#e5d6bd"/>
+    <path d="M322 110 L400 62 L478 110 Z" fill="#4a7ba8"/>
+    <circle cx="400" cy="140" r="26" fill="#ffffff" stroke="#4a7ba8" stroke-width="5"/>
+    <path d="M400 124 v16 l11 8" stroke="#2f4f68" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+    <rect x="220" y="216" width="60" height="128" fill="#bcd9ea" stroke="#7f9fb2" stroke-width="4"/>
+    <rect x="520" y="216" width="60" height="128" fill="#bcd9ea" stroke="#7f9fb2" stroke-width="4"/>
+
+    <rect x="330" y="248" width="140" height="96" fill="#7a5c46"/>
+    <path d="M400 248 v96" stroke="#5a422f" stroke-width="5"/>
+    <rect x="318" y="228" width="164" height="20" fill="#c9a06a"/>
+
+    <rect x="180" y="344" width="440" height="10" fill="#b6a68d"/>
+    <rect x="300" y="356" width="200" height="12" fill="#a99a82"/>
+  </g>
+
+  <g>
+    <rect x="290" y="66" width="16" height="60" fill="#8d8578"/>
+    <path d="M298 70 h56 v26 h-56 z" fill="#d9534f"/>
+    <rect x="380" y="70" width="20" height="16" fill="#2f6f8f"/>
+  </g>
+  <g>
+    <rect x="140" y="270" width="14" height="74" fill="#8d8578"/>
+    <rect x="76" y="300" width="120" height="30" fill="#3f6f4f"/>
+    <circle cx="136" cy="315" r="9" fill="#e9f3ec"/>
+    <rect x="646" y="270" width="14" height="74" fill="#8d8578"/>
+    <rect x="606" y="300" width="120" height="30" fill="#3f6f4f"/>
+    <circle cx="666" cy="315" r="9" fill="#e9f3ec"/>
+  </g>
+  <g>
+    <circle cx="94" cy="316" r="22" fill="#6cb86a"/><rect x="88" y="332" width="12" height="34" fill="#7a5233"/>
+    <circle cx="718" cy="318" r="20" fill="#7fc26f"/><rect x="712" y="334" width="12" height="32" fill="#7a5233"/>
+  </g>
+</svg>

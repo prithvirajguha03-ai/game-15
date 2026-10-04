@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A bus stop with a shelter, timetable board, bus and a waiting passenger">
+  <defs>
+    <linearGradient id="s13sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b6d9ef"/><stop offset="1" stop-color="#eef8fd"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#s13sky)"/>
+  <rect y="300" width="800" height="150" fill="#a9a49c"/>
+  <path d="M0 300 h800" stroke="#8e8a82" stroke-width="4"/>
+  <rect y="404" width="800" height="8" fill="#dedad2"/>
+
+  <g>
+    <rect x="90" y="150" width="280" height="150" fill="#cfe0ea"/>
+    <rect x="90" y="150" width="280" height="150" fill="#7fa8c0" opacity="0.25"/>
+    <rect x="76" y="132" width="308" height="22" rx="6" fill="#3f6f8f"/>
+    <rect x="86" y="164" width="16" height="136" fill="#5b87a3"/>
+    <rect x="358" y="164" width="16" height="136" fill="#5b87a3"/>
+    <rect x="118" y="182" width="100" height="86" fill="#e8f2f8" stroke="#5b87a3" stroke-width="4"/>
+    <g stroke="#5b87a3" stroke-width="3"><path d="M128 200 h80 M128 216 h80 M128 232 h80 M128 248 h60"/></g>
+    <rect x="252" y="182" width="16" height="118" fill="#a9c6d8"/>
+    <rect x="196" y="204" width="46" height="60" fill="#e2574c"/>
+    <rect x="196" y="216" width="46" height="10" fill="#fdf1e6"/>
+  </g>
+
+  <g>
+    <rect x="596" y="96" width="18" height="204" fill="#6f7d88"/>
+    <rect x="560" y="66" width="120" height="46" rx="8" fill="#2f6f8f"/>
+    <g fill="#eef8fd"><rect x="576" y="80" width="24" height="18" rx="4"/><rect x="608" y="80" width="24" height="18" rx="4"/><rect x="640" y="80" width="24" height="18" rx="4"/></g>
+  </g>
+
+  <g>
+    <rect x="410" y="212" width="240" height="88" rx="14" fill="#e0a83a"/>
+    <rect x="410" y="212" width="240" height="14" rx="7" fill="#c98c22"/>
+    <rect x="430" y="232" width="58" height="34" rx="5" fill="#cfe6f2"/>
+    <rect x="500" y="232" width="58" height="34" rx="5" fill="#cfe6f2"/>
+    <rect x="570" y="232" width="58" height="34" rx="5" fill="#cfe6f2"/>
+    <rect x="424" y="212" width="76" height="20" rx="6" fill="#2f5f7a"/>
+    <circle cx="452" cy="304" r="20" fill="#3a4247"/><circle cx="608" cy="304" r="20" fill="#3a4247"/>
+  </g>
+
+  <g fill="#5c6f7d">
+    <circle cx="392" cy="252" r="14"/><rect x="380" y="266" width="24" height="34" rx="10"/>
+  </g>
+  <g>
+    <rect x="660" y="268" width="16" height="32" rx="6" fill="#8a5a34"/>
+    <circle cx="668" cy="258" r="20" fill="#6cb86a"/>
+  </g>
+</svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A railway station platform with a train, platform canopy, signboard and tracks">
+  <defs>
+    <linearGradient id="s7sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a9cfe8"/><stop offset="1" stop-color="#eaf5fc"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#s7sky)"/>
+  <rect y="290" width="800" height="60" fill="#b0a48f"/>
+  <path d="M0 290 h800" stroke="#958a76" stroke-width="4"/>
+  <rect y="350" width="800" height="100" fill="#8f8577"/>
+
+  <g>
+    <rect x="40" y="150" width="640" height="140" rx="14" fill="#2f6f8f"/>
+    <rect x="40" y="150" width="640" height="22" rx="10" fill="#235a75"/>
+    <g fill="#d9edf6">
+      <rect x="80" y="184" width="66" height="52" rx="6"/><rect x="172" y="184" width="66" height="52" rx="6"/>
+      <rect x="264" y="184" width="66" height="52" rx="6"/><rect x="356" y="184" width="66" height="52" rx="6"/>
+      <rect x="448" y="184" width="66" height="52" rx="6"/><rect x="540" y="184" width="66" height="52" rx="6"/>
+    </g>
+    <rect x="632" y="196" width="66" height="80" rx="10" fill="#f0c33c"/>
+    <rect x="648" y="212" width="34" height="30" rx="4" fill="#cfe6f2"/>
+    <rect x="660" y="286" width="16" height="14" fill="#3c3c3c"/>
+    <rect x="700" y="286" width="16" height="14" fill="#3c3c3c"/>
+  </g>
+
+  <g>
+    <rect x="80" y="70" width="180" height="52" fill="#ffffff" stroke="#2f6f8f" stroke-width="5"/>
+    <rect x="100" y="86" width="140" height="20" rx="6" fill="#2f6f8f"/>
+    <rect x="120" y="122" width="14" height="60" fill="#8d8578"/>
+    <rect x="206" y="122" width="14" height="60" fill="#8d8578"/>
+  </g>
+
+  <g>
+    <rect x="470" y="60" width="280" height="14" fill="#6f7d88"/>
+    <rect x="490" y="74" width="12" height="96" fill="#6f7d88"/>
+    <rect x="700" y="74" width="12" height="96" fill="#6f7d88"/>
+    <rect x="482" y="170" width="240" height="10" fill="#8d9aa4"/>
+  </g>
+
+  <g stroke="#5d5648" stroke-width="6">
+    <path d="M0 372 h800"/><path d="M0 404 h800"/>
+  </g>
+  <g fill="#7a7263">
+    <rect x="20" y="360" width="46" height="56" rx="4"/><rect x="130" y="360" width="46" height="56" rx="4"/>
+    <rect x="240" y="360" width="46" height="56" rx="4"/><rect x="350" y="360" width="46" height="56" rx="4"/>
+    <rect x="460" y="360" width="46" height="56" rx="4"/><rect x="570" y="360" width="46" height="56" rx="4"/>
+    <rect x="680" y="360" width="46" height="56" rx="4"/>
+  </g>
+</svg>

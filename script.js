@@ -8,18 +8,35 @@
   BADGE[STATE.FEEDBACK] = {icon: '\u2728', text: 'THINKING'};
   BADGE[STATE.COMPLETED] = {icon: '\u2b50', text: 'COMPLETE'};
   const POSITIVE_FEEDBACK = ['That is right!','Wonderful!','Great job!','Well done!','Perfect!','Excellent!'];
-  const places = [
-    {id:1,name:'Market',image:'./assets/places/placeholder1.svg'},
-    {id:2,name:'School',image:'./assets/places/placeholder2.svg'},
-    {id:3,name:'Temple',image:'./assets/places/placeholder3.svg'},
-    {id:4,name:'Park',image:'./assets/places/placeholder4.svg'},
-    {id:5,name:'Hospital',image:'./assets/places/placeholder5.svg'},
-    {id:6,name:'Home',image:'./assets/places/placeholder6.svg'}
+  const CLUES = [
+    'Look carefully at the surroundings.',
+    'Can you recognise this familiar place?',
+    'Notice the details that give it away.',
+    'Think of the places you know well.'
   ];
+  const places = [
+    {id:1,name:'Market',image:'./assets/places/market.svg'},
+    {id:2,name:'School',image:'./assets/places/school.svg'},
+    {id:3,name:'Temple',image:'./assets/places/temple.svg'},
+    {id:4,name:'Park',image:'./assets/places/park.svg'},
+    {id:5,name:'Hospital',image:'./assets/places/hospital.svg'},
+    {id:6,name:'Home',image:'./assets/places/home.svg'},
+    {id:7,name:'Railway Station',image:'./assets/places/railway-station.svg'},
+    {id:8,name:'Shop',image:'./assets/places/shop.svg'},
+    {id:9,name:'Community Centre',image:'./assets/places/community-centre.svg'},
+    {id:10,name:'Beach',image:'./assets/places/beach.svg'},
+    {id:11,name:'Library',image:'./assets/places/library.svg'},
+    {id:12,name:'Restaurant',image:'./assets/places/restaurant.svg'},
+    {id:13,name:'Bus Stop',image:'./assets/places/bus-stop.svg'},
+    {id:14,name:'Street',image:'./assets/places/street.svg'},
+    {id:15,name:'Playground',image:'./assets/places/playground.svg'},
+    {id:16,name:'Garden',image:'./assets/places/garden.svg'}
+  ];
+  const OPTION_COUNT = 4;
   const $ = function(id){return document.getElementById(id);};
   const el = {
     badgeIcon:stateBadgeIcon,badgeText:stateBadgeText,statRound:statRound,statTotal:statTotal,statCorrect:statCorrect,statBest:statBest,
-    startScreen:startScreen,gameScreen:gameScreen,completeScreen:completeScreen,questionText:questionText,placeImage:placeImage,optionsGrid:optionsGrid,feedback:feedback,nextContainer:nextContainer,completeMessage:completeMessage,completeBest:completeBest,placeCard:document.querySelector('.place-card'),announcer:announcer
+    startScreen:startScreen,gameScreen:gameScreen,completeScreen:completeScreen,questionText:questionText,placeImage:placeImage,optionsGrid:optionsGrid,feedback:feedback,nextContainer:nextContainer,completeMessage:completeMessage,completeBest:completeBest,sceneFrame:document.querySelector('.scene-frame'),clueText:document.getElementById('clueText'),announcer:announcer
   };
   const btn = {start:btnStart,next:btnNext,playAgain:btnPlayAgain};
   const game = {state:STATE.START,round:0,totalRounds:CONFIG.TOTAL_ROUNDS,correctCount:0,best:{score:0,total:CONFIG.TOTAL_ROUNDS},currentPlace:null,usedPlaceIds:[],options:[],answered:false};
@@ -29,10 +46,10 @@
   function updateHud(){el.statRound.textContent=String(game.round);el.statTotal.textContent=String(game.totalRounds);el.statCorrect.textContent=String(game.correctCount);el.statBest.textContent=game.best.score+' / '+game.best.total;}
   function shuffleArray(arr){const a=arr.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));const tmp=a[i];a[i]=a[j];a[j]=tmp;}return a;}
   function getRandomPlace(ex){const es=new Set(ex);const c=[];for(let i=0;i<places.length;i++){if(!es.has(places[i].id))c.push(places[i]);}if(c.length===0){const last=game.currentPlace!==null?game.currentPlace.id:-1;const o=[];for(let i=0;i<places.length;i++){if(places[i].id!==last)o.push(places[i]);}if(o.length===0)return places[Math.floor(Math.random()*places.length)];return o[Math.floor(Math.random()*o.length)];}return c[Math.floor(Math.random()*c.length)];}
-  function generateOptions(cp){const opts=[cp];const es=new Set([cp.id]);let need=places.length-1;if(need>3)need=3;while(opts.length<need+1&&opts.length<4){let cand=null;for(let i=0;i<places.length;i++){if(!es.has(places[i].id)){cand=places[i];break;}}if(cand===null)break;opts.push(cand);es.add(cand.id);}const sh=shuffleArray(opts);return sh.length>4?sh.slice(0,4):sh;}
+  function generateOptions(cp){const target=Math.min(OPTION_COUNT,places.length);const pool=shuffleArray(places.filter(function(p){return p.id!==cp.id;}));const opts=[cp];for(let i=0;i<pool.length&&opts.length<target;i++)opts.push(pool[i]);return shuffleArray(opts);}
   function generateQuestion(){const ex=game.usedPlaceIds.slice();if(game.round>0&&game.currentPlace!==null)ex.push(game.currentPlace.id);const p=getRandomPlace(ex);game.currentPlace=p;game.usedPlaceIds.push(p.id);if(game.usedPlaceIds.length>places.length)game.usedPlaceIds.shift();game.options=generateOptions(p);game.answered=false;}
-  function retriggerPlaceAnimation(){if(el.placeCard===null)return;el.placeCard.classList.remove('face-card');void el.placeCard.offsetWidth;el.placeCard.classList.add('face-card');}
-  function showQuestion(){if(game.currentPlace===null)return;el.placeImage.src=game.currentPlace.image;el.placeImage.alt='Place to identify';el.questionText.textContent='Where is this?';el.feedback.textContent='';el.nextContainer.classList.add('hidden');retriggerPlaceAnimation();el.optionsGrid.innerHTML='';for(let i=0;i<game.options.length;i++){const option=game.options[i];const b=document.createElement('button');b.type='button';b.className='option-btn';b.textContent=option.name;b.dataset.optionId=String(option.id);b.addEventListener('click',(function(opt,be){return function(){handleAnswer(opt,be);};})(option,b));el.optionsGrid.appendChild(b);}el.optionsGrid.style.pointerEvents='auto';}
+  function retriggerSceneAnimation(){if(el.sceneFrame===null)return;el.sceneFrame.classList.remove('scene-frame');void el.sceneFrame.offsetWidth;el.sceneFrame.classList.add('scene-frame');}
+  function showQuestion(){if(game.currentPlace===null)return;el.placeImage.src=game.currentPlace.image;el.placeImage.alt='Scene of a familiar place: choose the place name that matches';el.questionText.textContent='Where is this?';if(el.clueText!==null&&el.clueText!==undefined)el.clueText.textContent=CLUES[Math.floor(Math.random()*CLUES.length)];el.feedback.textContent='';el.nextContainer.classList.add('hidden');retriggerSceneAnimation();el.optionsGrid.innerHTML='';for(let i=0;i<game.options.length;i++){const option=game.options[i];const b=document.createElement('button');b.type='button';b.className='option-btn';b.textContent=option.name;b.dataset.optionId=String(option.id);b.addEventListener('click',(function(opt,be){return function(){handleAnswer(opt,be);};})(option,b));el.optionsGrid.appendChild(b);}el.optionsGrid.style.pointerEvents='auto';}
   function handleAnswer(sel,btnEl){if(game.answered||game.state===STATE.FEEDBACK)return;game.answered=true;el.optionsGrid.style.pointerEvents='none';setState(STATE.FEEDBACK);const isCorrect=sel.id===game.currentPlace.id;let correctOpt=null;for(let i=0;i<game.options.length;i++){if(game.options[i].id===game.currentPlace.id){correctOpt=game.options[i];break;}}const btns=el.optionsGrid.querySelectorAll('.option-btn');if(isCorrect){game.correctCount+=1;btnEl.classList.add('correct');const idx=Math.floor(Math.random()*POSITIVE_FEEDBACK.length);const ft=POSITIVE_FEEDBACK[idx];el.feedback.textContent=ft;announce(ft);}else{btnEl.classList.add('incorrect');for(let i=0;i<btns.length;i++){if(btns[i].dataset.optionId===String(correctOpt.id))btns[i].classList.add('correct');}const ft='That is okay - this was '+game.currentPlace.name+'.';el.feedback.textContent=ft;announce(ft);}updateHud();el.nextContainer.classList.remove('hidden');}
   function nextRound(){game.round+=1;if(game.round>game.totalRounds){finishGame();return;}generateQuestion();showQuestion();setState(STATE.PLAYING);updateHud();announce('Round '+game.round+' of '+game.totalRounds+'. Where is this?');}
   function finishGame(){setState(STATE.COMPLETED);el.gameScreen.classList.add('hidden');el.completeScreen.classList.remove('hidden');const score=game.correctCount;const total=game.totalRounds;const best=game.best;const msg='You recognised '+score+' out of '+total+' places.';el.completeMessage.textContent=msg;if(score>best.score){game.best={score:score,total:total};saveBest(score,total);el.completeBest.textContent='Best Score: '+score+' / '+total;el.completeBest.classList.remove('hidden');announce('Well done! '+msg+' New best score!');}else{el.completeBest.textContent='Best Score: '+best.score+' / '+best.total;el.completeBest.classList.remove('hidden');announce('Well done! '+msg);}updateHud();}

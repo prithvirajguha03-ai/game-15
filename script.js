@@ -1,0 +1,45 @@
+﻿(function(){
+  'use strict';
+  const CONFIG = {TOTAL_ROUNDS: 10, BEST_KEY: 'where-is-that.best.v1'};
+  const STATE = Object.freeze({START:'START',PLAYING:'PLAYING',FEEDBACK:'FEEDBACK',COMPLETED:'COMPLETED'});
+  const BADGE = {};
+  BADGE[STATE.START] = {icon: '\u25CF', text: 'READY'};
+  BADGE[STATE.PLAYING] = {icon: '\ud83d\udc40', text: 'PLAYING'};
+  BADGE[STATE.FEEDBACK] = {icon: '\u2728', text: 'THINKING'};
+  BADGE[STATE.COMPLETED] = {icon: '\u2b50', text: 'COMPLETE'};
+  const POSITIVE_FEEDBACK = ['That is right!','Wonderful!','Great job!','Well done!','Perfect!','Excellent!'];
+  const places = [
+    {id:1,name:'Market',image:'./assets/places/placeholder1.svg'},
+    {id:2,name:'School',image:'./assets/places/placeholder2.svg'},
+    {id:3,name:'Temple',image:'./assets/places/placeholder3.svg'},
+    {id:4,name:'Park',image:'./assets/places/placeholder4.svg'},
+    {id:5,name:'Hospital',image:'./assets/places/placeholder5.svg'},
+    {id:6,name:'Home',image:'./assets/places/placeholder6.svg'}
+  ];
+  const $ = function(id){return document.getElementById(id);};
+  const el = {
+    badgeIcon:stateBadgeIcon,badgeText:stateBadgeText,statRound:statRound,statTotal:statTotal,statCorrect:statCorrect,statBest:statBest,
+    startScreen:startScreen,gameScreen:gameScreen,completeScreen:completeScreen,questionText:questionText,placeImage:placeImage,optionsGrid:optionsGrid,feedback:feedback,nextContainer:nextContainer,completeMessage:completeMessage,completeBest:completeBest,placeCard:document.querySelector('.place-card'),announcer:announcer
+  };
+  const btn = {start:btnStart,next:btnNext,playAgain:btnPlayAgain};
+  const game = {state:STATE.START,round:0,totalRounds:CONFIG.TOTAL_ROUNDS,correctCount:0,best:{score:0,total:CONFIG.TOTAL_ROUNDS},currentPlace:null,usedPlaceIds:[],options:[],answered:false};
+  function readBest(){try{const r=localStorage.getItem(CONFIG.BEST_KEY);if(r===null)return{score:0,total:CONFIG.TOTAL_ROUNDS};const p=JSON.parse(r);if(typeof p.score==='number'&&typeof p.total==='number')return{score:p.score,total:p.total};return{score:0,total:CONFIG.TOTAL_ROUNDS};}catch(e){return{score:0,total:CONFIG.TOTAL_ROUNDS};}}
+  function saveBest(s,t){try{localStorage.setItem(CONFIG.BEST_KEY,JSON.stringify({score:s,total:t}));}catch(e){}}
+  function setState(n){game.state=n;const b=BADGE[n];if(b){el.badgeIcon.textContent=b.icon;el.badgeText.textContent=b.text;}}
+  function updateHud(){el.statRound.textContent=String(game.round);el.statTotal.textContent=String(game.totalRounds);el.statCorrect.textContent=String(game.correctCount);el.statBest.textContent=game.best.score+' / '+game.best.total;}
+  function shuffleArray(arr){const a=arr.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));const tmp=a[i];a[i]=a[j];a[j]=tmp;}return a;}
+  function getRandomPlace(ex){const es=new Set(ex);const c=[];for(let i=0;i<places.length;i++){if(!es.has(places[i].id))c.push(places[i]);}if(c.length===0){const last=game.currentPlace!==null?game.currentPlace.id:-1;const o=[];for(let i=0;i<places.length;i++){if(places[i].id!==last)o.push(places[i]);}if(o.length===0)return places[Math.floor(Math.random()*places.length)];return o[Math.floor(Math.random()*o.length)];}return c[Math.floor(Math.random()*c.length)];}
+  function generateOptions(cp){const opts=[cp];const es=new Set([cp.id]);let need=places.length-1;if(need>3)need=3;while(opts.length<need+1&&opts.length<4){let cand=null;for(let i=0;i<places.length;i++){if(!es.has(places[i].id)){cand=places[i];break;}}if(cand===null)break;opts.push(cand);es.add(cand.id);}const sh=shuffleArray(opts);return sh.length>4?sh.slice(0,4):sh;}
+  function generateQuestion(){const ex=game.usedPlaceIds.slice();if(game.round>0&&game.currentPlace!==null)ex.push(game.currentPlace.id);const p=getRandomPlace(ex);game.currentPlace=p;game.usedPlaceIds.push(p.id);if(game.usedPlaceIds.length>places.length)game.usedPlaceIds.shift();game.options=generateOptions(p);game.answered=false;}
+  function retriggerPlaceAnimation(){if(el.placeCard===null)return;el.placeCard.classList.remove('face-card');void el.placeCard.offsetWidth;el.placeCard.classList.add('face-card');}
+  function showQuestion(){if(game.currentPlace===null)return;el.placeImage.src=game.currentPlace.image;el.placeImage.alt='Place to identify';el.questionText.textContent='Where is this?';el.feedback.textContent='';el.nextContainer.classList.add('hidden');retriggerPlaceAnimation();el.optionsGrid.innerHTML='';for(let i=0;i<game.options.length;i++){const option=game.options[i];const b=document.createElement('button');b.type='button';b.className='option-btn';b.textContent=option.name;b.dataset.optionId=String(option.id);b.addEventListener('click',(function(opt,be){return function(){handleAnswer(opt,be);};})(option,b));el.optionsGrid.appendChild(b);}el.optionsGrid.style.pointerEvents='auto';}
+  function handleAnswer(sel,btnEl){if(game.answered||game.state===STATE.FEEDBACK)return;game.answered=true;el.optionsGrid.style.pointerEvents='none';setState(STATE.FEEDBACK);const isCorrect=sel.id===game.currentPlace.id;let correctOpt=null;for(let i=0;i<game.options.length;i++){if(game.options[i].id===game.currentPlace.id){correctOpt=game.options[i];break;}}const btns=el.optionsGrid.querySelectorAll('.option-btn');if(isCorrect){game.correctCount+=1;btnEl.classList.add('correct');const idx=Math.floor(Math.random()*POSITIVE_FEEDBACK.length);const ft=POSITIVE_FEEDBACK[idx];el.feedback.textContent=ft;announce(ft);}else{btnEl.classList.add('incorrect');for(let i=0;i<btns.length;i++){if(btns[i].dataset.optionId===String(correctOpt.id))btns[i].classList.add('correct');}const ft='That is okay - this was '+game.currentPlace.name+'.';el.feedback.textContent=ft;announce(ft);}updateHud();el.nextContainer.classList.remove('hidden');}
+  function nextRound(){game.round+=1;if(game.round>game.totalRounds){finishGame();return;}generateQuestion();showQuestion();setState(STATE.PLAYING);updateHud();announce('Round '+game.round+' of '+game.totalRounds+'. Where is this?');}
+  function finishGame(){setState(STATE.COMPLETED);el.gameScreen.classList.add('hidden');el.completeScreen.classList.remove('hidden');const score=game.correctCount;const total=game.totalRounds;const best=game.best;const msg='You recognised '+score+' out of '+total+' places.';el.completeMessage.textContent=msg;if(score>best.score){game.best={score:score,total:total};saveBest(score,total);el.completeBest.textContent='Best Score: '+score+' / '+total;el.completeBest.classList.remove('hidden');announce('Well done! '+msg+' New best score!');}else{el.completeBest.textContent='Best Score: '+best.score+' / '+best.total;el.completeBest.classList.remove('hidden');announce('Well done! '+msg);}updateHud();}
+  function startGame(){game.round=0;game.correctCount=0;game.usedPlaceIds=[];game.currentPlace=null;game.answered=false;setState(STATE.START);el.startScreen.classList.add('hidden');el.completeScreen.classList.add('hidden');el.gameScreen.classList.remove('hidden');nextRound();updateHud();}
+  function restartGame(){startGame();}
+  function announce(m){if(el.announcer===null)return;el.announcer.textContent='';setTimeout(function(){el.announcer.textContent=m;},0);}
+  function bindEvents(){btn.start.addEventListener('click',startGame);btn.next.addEventListener('click',nextRound);btn.playAgain.addEventListener('click',restartGame);window.addEventListener('keydown',function(event){if(event.key!=='Enter'&&event.key!==' ')return;const t=event.target;const on=t instanceof Element&&t.closest('button, a[href], input, select, textarea');if(on)return;if(game.state===STATE.START){event.preventDefault();startGame();}else if(game.state===STATE.FEEDBACK){event.preventDefault();nextRound();}else if(game.state===STATE.COMPLETED){event.preventDefault();restartGame();}});}
+  function init(){game.totalRounds=CONFIG.TOTAL_ROUNDS;game.best=readBest();updateHud();setState(STATE.START);el.startScreen.classList.remove('hidden');el.gameScreen.classList.add('hidden');el.completeScreen.classList.add('hidden');bindEvents();announce('Where Is That? Recognition game. No rush, take your time.');}
+  init();
+})();

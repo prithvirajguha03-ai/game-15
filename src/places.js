@@ -1244,6 +1244,258 @@
     <circle cx="196" cy="386" r="10" fill="#e2b23c"/>
   </g>
 </svg>`
+    },
+    {
+      id: "police-station",
+      name: "Police Station",
+      cues: ["khaki building", "police car", "blue-uniform figure"],
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A khaki police station with a POLICE sign and blue beacon, a white and blue police car with a light bar, and an officer in a blue uniform">
+  <rect width="800" height="450" fill="#c3ddf0"/>
+  <rect y="340" width="800" height="110" fill="#b8b2a0"/>
+  <path d="M0 340 h800" stroke="#9a9481" stroke-width="4"/>
+
+  <g>
+    <rect x="150" y="150" width="330" height="190" fill="#d9c78e" stroke="#6d5a2c" stroke-width="4"/>
+    <rect x="140" y="132" width="350" height="22" fill="#b8a35e" stroke="#6d5a2c" stroke-width="4"/>
+    <rect x="205" y="100" width="220" height="40" rx="6" fill="#2f5fa8" stroke="#1f4278" stroke-width="4"/>
+    <text x="315" y="128" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="bold" fill="#ffffff" text-anchor="middle" letter-spacing="2">POLICE</text>
+    <g fill="#bcd9ea" stroke="#4a6b82" stroke-width="3">
+      <rect x="185" y="182" width="70" height="54"/>
+      <rect x="375" y="182" width="70" height="54"/>
+    </g>
+    <path d="M220 182 v54 M185 209 h70 M410 182 v54 M375 209 h70" stroke="#4a6b82" stroke-width="3"/>
+    <rect x="285" y="252" width="80" height="88" fill="#7a6a3f" stroke="#5a4d2c" stroke-width="3"/>
+    <path d="M325 252 v88" stroke="#5a4d2c" stroke-width="3"/>
+    <circle cx="315" cy="298" r="4" fill="#f2dcae"/>
+    <circle cx="336" cy="298" r="4" fill="#f2dcae"/>
+    <rect x="166" y="120" width="26" height="16" rx="6" fill="#3f7fd0" stroke="#1f4278" stroke-width="3"/>
+  </g>
+
+  <g>
+    <circle cx="500" cy="258" r="15" fill="#f0c9a0" stroke="#6f4d33" stroke-width="3"/>
+    <rect x="482" y="240" width="36" height="12" rx="4" fill="#2f5fa8" stroke="#1f4278" stroke-width="3"/>
+    <rect x="478" y="250" width="44" height="6" rx="3" fill="#1f4278"/>
+    <rect x="486" y="272" width="28" height="44" rx="7" fill="#2f5fa8" stroke="#1f4278" stroke-width="3"/>
+    <circle cx="500" cy="286" r="5" fill="#f2c75b" stroke="#a5871f" stroke-width="2"/>
+    <rect x="470" y="276" width="16" height="30" rx="6" fill="#2f5fa8" stroke="#1f4278" stroke-width="3"/>
+    <rect x="514" y="276" width="16" height="30" rx="6" fill="#2f5fa8" stroke="#1f4278" stroke-width="3"/>
+    <rect x="490" y="316" width="8" height="26" fill="#1f4278"/>
+    <rect x="502" y="316" width="8" height="26" fill="#1f4278"/>
+  </g>
+
+  <g>
+    <rect x="560" y="252" width="150" height="34" rx="8" fill="#ffffff" stroke="#33445c" stroke-width="4"/>
+    <rect x="572" y="260" width="52" height="20" fill="#bcd9ea" stroke="#33445c" stroke-width="3"/>
+    <rect x="636" y="260" width="62" height="20" fill="#bcd9ea" stroke="#33445c" stroke-width="3"/>
+    <rect x="520" y="286" width="240" height="70" rx="10" fill="#ffffff" stroke="#33445c" stroke-width="4"/>
+    <rect x="520" y="316" width="240" height="12" fill="#2f5fa8"/>
+    <text x="640" y="308" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold" fill="#2f5fa8" text-anchor="middle">POLICE</text>
+    <rect x="608" y="238" width="34" height="16" rx="5" fill="#e23c3c" stroke="#33445c" stroke-width="3"/>
+    <rect x="642" y="238" width="34" height="16" rx="5" fill="#3f7fd0" stroke="#33445c" stroke-width="3"/>
+    <circle cx="572" cy="358" r="22" fill="#2b2f36" stroke="#14171b" stroke-width="3"/>
+    <circle cx="572" cy="358" r="8" fill="#c3ccd2"/>
+    <circle cx="708" cy="358" r="22" fill="#2b2f36" stroke="#14171b" stroke-width="3"/>
+    <circle cx="708" cy="358" r="8" fill="#c3ccd2"/>
+  </g>
+</svg>`
+    },
+    {
+      id: "fire-station",
+      name: "Fire Station",
+      cues: ["red fire truck", "ladder", "fire helmet"],
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A red fire station with FIRE sign and garage doors, a red fire truck with a silver ladder on top, and a firefighter wearing a yellow helmet">
+  <rect width="800" height="450" fill="#cfe3f2"/>
+  <rect y="340" width="800" height="110" fill="#a9a290"/>
+  <path d="M0 340 h800" stroke="#8f8878" stroke-width="4"/>
+
+  <g>
+    <rect x="80" y="150" width="360" height="190" fill="#d9534f" stroke="#8f2f28" stroke-width="4"/>
+    <rect x="70" y="132" width="380" height="22" fill="#b23c33" stroke="#8f2f28" stroke-width="4"/>
+    <rect x="150" y="168" width="220" height="38" rx="6" fill="#ffffff" stroke="#8f2f28" stroke-width="4"/>
+    <text x="260" y="196" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="bold" fill="#d9534f" text-anchor="middle" letter-spacing="2">FIRE</text>
+    <g fill="#5a5f66" stroke="#3a3f46" stroke-width="4">
+      <rect x="108" y="220" width="140" height="120"/>
+      <rect x="272" y="220" width="140" height="120"/>
+    </g>
+    <g stroke="#3a3f46" stroke-width="3">
+      <path d="M108 252 h140 M108 284 h140 M108 316 h140"/>
+      <path d="M272 252 h140 M272 284 h140 M272 316 h140"/>
+    </g>
+    <rect x="244" y="112" width="46" height="18" rx="6" fill="#e23c3c" stroke="#8f2f28" stroke-width="3"/>
+  </g>
+
+  <g>
+    <circle cx="462" cy="270" r="14" fill="#f0c9a0" stroke="#6f4d33" stroke-width="3"/>
+    <path d="M446 268 a16 16 0 0 1 32 0 z" fill="#e2b23c" stroke="#a5871f" stroke-width="3"/>
+    <rect x="442" y="266" width="40" height="6" rx="3" fill="#e2b23c" stroke="#a5871f" stroke-width="3"/>
+    <rect x="450" y="284" width="24" height="42" rx="6" fill="#e2b23c" stroke="#a5871f" stroke-width="3"/>
+    <path d="M450 298 h24 M450 310 h24" stroke="#f2f2f2" stroke-width="4"/>
+    <rect x="436" y="288" width="14" height="28" rx="6" fill="#e2b23c" stroke="#a5871f" stroke-width="3"/>
+    <rect x="476" y="288" width="14" height="28" rx="6" fill="#e2b23c" stroke="#a5871f" stroke-width="3"/>
+    <rect x="452" y="326" width="8" height="22" fill="#3a4247"/>
+    <rect x="464" y="326" width="8" height="22" fill="#3a4247"/>
+  </g>
+
+  <g>
+    <rect x="500" y="272" width="270" height="76" rx="10" fill="#e23c3c" stroke="#8f2f28" stroke-width="4"/>
+    <rect x="660" y="230" width="100" height="48" rx="8" fill="#e23c3c" stroke="#8f2f28" stroke-width="4"/>
+    <rect x="672" y="240" width="76" height="28" fill="#bcd9ea" stroke="#8f2f28" stroke-width="3"/>
+    <rect x="500" y="302" width="270" height="12" fill="#ffffff"/>
+    <text x="590" y="332" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold" fill="#ffffff" text-anchor="middle">FIRE</text>
+    <g stroke="#5a5f66" stroke-width="9" stroke-linecap="round">
+      <path d="M520 214 H760"/>
+      <path d="M520 198 H760"/>
+      <path d="M540 198 v16 M570 198 v16 M600 198 v16 M630 198 v16 M660 198 v16 M690 198 v16 M720 198 v16 M750 198 v16"/>
+    </g>
+    <g stroke="#d0d4d8" stroke-width="5" stroke-linecap="round">
+      <path d="M520 214 H760"/>
+      <path d="M520 198 H760"/>
+      <path d="M540 198 v16 M570 198 v16 M600 198 v16 M630 198 v16 M660 198 v16 M690 198 v16 M720 198 v16 M750 198 v16"/>
+    </g>
+    <circle cx="560" cy="358" r="22" fill="#2b2f36" stroke="#14171b" stroke-width="3"/>
+    <circle cx="560" cy="358" r="8" fill="#c3ccd2"/>
+    <circle cx="715" cy="358" r="22" fill="#2b2f36" stroke="#14171b" stroke-width="3"/>
+    <circle cx="715" cy="358" r="8" fill="#c3ccd2"/>
+  </g>
+</svg>`
+    },
+    {
+      id: "post-office",
+      name: "Post Office",
+      cues: ["red post box", "envelope icon", "mail van"],
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A post office with a POST OFFICE sign, a big envelope icon on the wall, a red pillar post box and a yellow mail van">
+  <rect width="800" height="450" fill="#cfe6f7"/>
+  <rect y="340" width="800" height="110" fill="#bdb5a2"/>
+  <path d="M0 340 h800" stroke="#9a9280" stroke-width="4"/>
+
+  <g>
+    <rect x="90" y="150" width="360" height="190" fill="#f0e0c0" stroke="#8a6a3a" stroke-width="4"/>
+    <rect x="80" y="132" width="380" height="22" fill="#c4483f" stroke="#8f2f28" stroke-width="4"/>
+    <rect x="130" y="100" width="280" height="40" rx="6" fill="#c4483f" stroke="#8f2f28" stroke-width="4"/>
+    <text x="270" y="128" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold" fill="#ffffff" text-anchor="middle" letter-spacing="1">POST OFFICE</text>
+    <rect x="140" y="196" width="96" height="64" rx="6" fill="#ffffff" stroke="#3a4247" stroke-width="4"/>
+    <path d="M140 196 L188 234 L236 196" fill="none" stroke="#c4483f" stroke-width="5"/>
+    <rect x="300" y="240" width="90" height="100" fill="#8a6a3a" stroke="#5a4226" stroke-width="3"/>
+    <path d="M345 240 v100" stroke="#5a4226" stroke-width="3"/>
+    <rect x="360" y="262" width="40" height="30" fill="#bcd9ea" stroke="#5a4226" stroke-width="3"/>
+    <circle cx="330" cy="290" r="4" fill="#f2dcae"/>
+  </g>
+
+  <g>
+    <path d="M470 286 a30 26 0 0 1 60 0 z" fill="#e23c3c" stroke="#8f2f28" stroke-width="4"/>
+    <rect x="470" y="286" width="60" height="60" fill="#e23c3c" stroke="#8f2f28" stroke-width="4"/>
+    <rect x="482" y="304" width="36" height="10" rx="4" fill="#5a1f1a"/>
+    <rect x="476" y="346" width="48" height="12" rx="4" fill="#8f2f28"/>
+    <rect x="492" y="318" width="16" height="20" rx="3" fill="#ffffff"/>
+  </g>
+
+  <g>
+    <rect x="560" y="258" width="80" height="42" rx="8" fill="#e2b23c" stroke="#a5871f" stroke-width="4"/>
+    <rect x="572" y="266" width="56" height="24" fill="#bcd9ea" stroke="#a5871f" stroke-width="3"/>
+    <rect x="560" y="292" width="200" height="66" rx="8" fill="#e2b23c" stroke="#a5871f" stroke-width="4"/>
+    <rect x="560" y="318" width="200" height="12" fill="#c4483f"/>
+    <text x="680" y="312" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="bold" fill="#8f2f28" text-anchor="middle">MAIL</text>
+    <circle cx="600" cy="358" r="20" fill="#2b2f36" stroke="#14171b" stroke-width="3"/>
+    <circle cx="600" cy="358" r="7" fill="#c3ccd2"/>
+    <circle cx="720" cy="358" r="20" fill="#2b2f36" stroke="#14171b" stroke-width="3"/>
+    <circle cx="720" cy="358" r="7" fill="#c3ccd2"/>
+  </g>
+</svg>`
+    },
+    {
+      id: "bank",
+      name: "Bank",
+      cues: ["ATM machine", "rupee signboard", "queue of people"],
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A bank with columns and a rupee symbol signboard, an ATM machine on the right and three people queuing in front">
+  <rect width="800" height="450" fill="#cfe3f2"/>
+  <rect y="336" width="800" height="114" fill="#c3bda9"/>
+  <path d="M0 336 h800" stroke="#a49e8a" stroke-width="4"/>
+
+  <g>
+    <polygon points="90,150 300,84 510,150" fill="#e6dcc2" stroke="#6f6a58" stroke-width="4"/>
+    <rect x="100" y="150" width="400" height="186" fill="#f2eee4" stroke="#6f6a58" stroke-width="4"/>
+    <rect x="170" y="158" width="260" height="40" rx="6" fill="#2f6f4f" stroke="#1f4f38" stroke-width="4"/>
+    <text x="300" y="186" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="bold" fill="#ffffff" text-anchor="middle" letter-spacing="1">&#8377; BANK</text>
+    <g fill="#f2eee4" stroke="#6f6a58" stroke-width="3">
+      <rect x="140" y="216" width="30" height="120"/>
+      <rect x="220" y="216" width="30" height="120"/>
+      <rect x="300" y="216" width="30" height="120"/>
+      <rect x="380" y="216" width="30" height="120"/>
+    </g>
+    <rect x="90" y="336" width="420" height="12" fill="#cfc7b0" stroke="#8a8370" stroke-width="3"/>
+    <rect x="110" y="324" width="380" height="12" fill="#cfc7b0" stroke="#8a8370" stroke-width="3"/>
+  </g>
+
+  <g>
+    <rect x="640" y="228" width="130" height="122" rx="10" fill="#2f6f4f" stroke="#1f4f38" stroke-width="4"/>
+    <rect x="656" y="244" width="98" height="52" fill="#bcd9ea" stroke="#1f4f38" stroke-width="3"/>
+    <text x="705" y="282" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="bold" fill="#1f4f38" text-anchor="middle">&#8377;</text>
+    <rect x="660" y="306" width="52" height="30" rx="4" fill="#d9d9d9" stroke="#1f4f38" stroke-width="3"/>
+    <rect x="724" y="312" width="30" height="8" rx="3" fill="#1f4f38"/>
+    <text x="705" y="344" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle" letter-spacing="1">ATM</text>
+  </g>
+
+  <g>
+    <circle cx="536" cy="258" r="13" fill="#f0c9a0" stroke="#6f4d33" stroke-width="3"/>
+    <rect x="526" y="270" width="22" height="40" rx="7" fill="#3f8fd0" stroke="#2c6699" stroke-width="3"/>
+    <rect x="530" y="310" width="6" height="26" fill="#3a4247"/>
+    <rect x="540" y="310" width="6" height="26" fill="#3a4247"/>
+    <circle cx="580" cy="258" r="13" fill="#f0c9a0" stroke="#6f4d33" stroke-width="3"/>
+    <rect x="570" y="270" width="22" height="40" rx="7" fill="#c4483f" stroke="#8f2f28" stroke-width="3"/>
+    <rect x="574" y="310" width="6" height="26" fill="#3a4247"/>
+    <rect x="584" y="310" width="6" height="26" fill="#3a4247"/>
+    <circle cx="624" cy="258" r="13" fill="#f0c9a0" stroke="#6f4d33" stroke-width="3"/>
+    <rect x="614" y="270" width="22" height="40" rx="7" fill="#4f9c5c" stroke="#35702f" stroke-width="3"/>
+    <rect x="618" y="310" width="6" height="26" fill="#3a4247"/>
+    <rect x="628" y="310" width="6" height="26" fill="#3a4247"/>
+  </g>
+</svg>`
+    },
+    {
+      id: "airport",
+      name: "Airport",
+      cues: ["airplane", "control tower", "runway"],
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="An airport scene with a white and blue airplane flying over a runway with a dashed centre line and a control tower with a radar on the right">
+  <rect width="800" height="450" fill="#a9d6f0"/>
+  <circle cx="120" cy="80" r="34" fill="#ffe9a8"/>
+  <rect y="300" width="800" height="150" fill="#9aa0a6"/>
+  <path d="M0 300 h800" stroke="#7f858b" stroke-width="4"/>
+  <path d="M120 450 L300 300 L520 300 L700 450 Z" fill="#4a4f55" stroke="#33373c" stroke-width="3"/>
+  <g stroke="#f2f2f2" stroke-width="7" stroke-linecap="round">
+    <path d="M410 448 v-18"/>
+    <path d="M410 416 v-18"/>
+    <path d="M410 384 v-18"/>
+    <path d="M410 352 v-18"/>
+    <path d="M410 320 v-14"/>
+  </g>
+
+  <g transform="translate(300 150) rotate(-6)">
+    <path d="M-150 -20 q-24 -46 -46 -60 h30 q26 18 40 60 z" fill="#2f5fa8" stroke="#33445c" stroke-width="4"/>
+    <rect x="-150" y="-20" width="290" height="40" rx="20" fill="#ffffff" stroke="#33445c" stroke-width="4"/>
+    <path d="M140 -20 q46 20 0 40 z" fill="#ffffff" stroke="#33445c" stroke-width="4"/>
+    <rect x="-150" y="4" width="290" height="10" fill="#2f5fa8"/>
+    <g fill="#bcd9ea" stroke="#33445c" stroke-width="2">
+      <circle cx="-110" cy="-6" r="5"/><circle cx="-88" cy="-6" r="5"/><circle cx="-66" cy="-6" r="5"/>
+      <circle cx="-44" cy="-6" r="5"/><circle cx="-22" cy="-6" r="5"/><circle cx="0" cy="-6" r="5"/>
+      <circle cx="22" cy="-6" r="5"/><circle cx="44" cy="-6" r="5"/><circle cx="66" cy="-6" r="5"/>
+      <circle cx="88" cy="-6" r="5"/><circle cx="110" cy="-6" r="5"/>
+    </g>
+    <path d="M-20 20 l-70 74 h44 l66 -74 z" fill="#e2e8ee" stroke="#33445c" stroke-width="3"/>
+    <rect x="-90" y="24" width="70" height="26" rx="13" fill="#c3ccd2" stroke="#33445c" stroke-width="3"/>
+    <path d="M-150 4 l-26 14 h30 z" fill="#2f5fa8" stroke="#33445c" stroke-width="3"/>
+  </g>
+
+  <g>
+    <rect x="640" y="248" width="70" height="122" fill="#d9d2c2" stroke="#6f6a58" stroke-width="4"/>
+    <rect x="622" y="212" width="106" height="46" rx="6" fill="#bcd9ea" stroke="#33445c" stroke-width="4"/>
+    <path d="M648 212 v46 M675 212 v46 M702 212 v46" stroke="#33445c" stroke-width="3"/>
+    <rect x="616" y="202" width="118" height="12" rx="4" fill="#2f5fa8" stroke="#1f4278" stroke-width="3"/>
+    <path d="M650 190 a25 25 0 0 1 50 0" fill="none" stroke="#6f6a58" stroke-width="4"/>
+    <path d="M675 190 v-18" stroke="#6f6a58" stroke-width="4"/>
+    <circle cx="675" cy="168" r="8" fill="#e23c3c" stroke="#8f2f28" stroke-width="3"/>
+    <rect x="660" y="330" width="30" height="40" fill="#8a8370" stroke="#6f6a58" stroke-width="3"/>
+  </g>
+</svg>`
     }
   ];
 

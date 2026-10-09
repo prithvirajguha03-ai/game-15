@@ -8,100 +8,6 @@
 
   var PLACES = [
     {
-      id: "market",
-      name: "Market",
-      cues: ["colourful canopies", "produce baskets", "weighing scale", "hand cart"],
-      svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="An open air market with four colourful stalls, produce baskets, hanging fruit, a weighing scale, shoppers and a hand cart">
-  <defs>
-    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#bfe3f7"/><stop offset="1" stop-color="#eaf6ff"/>
-    </linearGradient>
-    <pattern id="awn1" width="20" height="10" patternUnits="userSpaceOnUse">
-      <rect width="20" height="10" fill="#e2574c"/><rect width="10" height="10" fill="#fff4ec"/>
-    </pattern>
-    <pattern id="awn2" width="20" height="10" patternUnits="userSpaceOnUse">
-      <rect width="20" height="10" fill="#3f8fd0"/><rect width="10" height="10" fill="#e8f4fd"/>
-    </pattern>
-    <pattern id="awn3" width="20" height="10" patternUnits="userSpaceOnUse">
-      <rect width="20" height="10" fill="#e8a33d"/><rect width="10" height="10" fill="#fff6e2"/>
-    </pattern>
-    <pattern id="awn4" width="20" height="10" patternUnits="userSpaceOnUse">
-      <rect width="20" height="10" fill="#4f9c5c"/><rect width="10" height="10" fill="#eef7ee"/>
-    </pattern>
-  </defs>
-  <rect width="800" height="450" fill="url(#sky)"/>
-  <rect y="330" width="800" height="120" fill="#c9bda8"/>
-  <rect y="330" width="800" height="10" fill="#b3a48d"/>
-
-  <g>
-    <rect x="30" y="150" width="170" height="180" fill="#e9dcc6" stroke="#8d6e4f" stroke-width="3"/>
-    <rect x="20" y="122" width="190" height="36" fill="url(#awn1)" stroke="#b93c33" stroke-width="3"/>
-    <rect x="40" y="216" width="150" height="114" fill="#8d6e4f" stroke="#5a3f2c" stroke-width="3"/>
-    <rect x="48" y="228" width="134" height="24" fill="#efe0c6"/>
-    <g><circle cx="64" cy="240" r="9" fill="#e2513f"/><circle cx="86" cy="234" r="9" fill="#f2b134"/><circle cx="108" cy="242" r="9" fill="#79b93c"/><circle cx="130" cy="236" r="9" fill="#e2513f"/><circle cx="152" cy="242" r="9" fill="#f2b134"/></g>
-    <path d="M70 284 q8 16 20 0 M110 284 q8 16 20 0 M140 288 q8 14 18 0" stroke="#b93c33" stroke-width="5" fill="none" stroke-linecap="round"/>
-  </g>
-
-  <g>
-    <rect x="225" y="165" width="160" height="165" fill="#e6d6bb" stroke="#8d6e4f" stroke-width="3"/>
-    <rect x="217" y="138" width="176" height="36" fill="url(#awn2)" stroke="#2a6ea6" stroke-width="3"/>
-    <rect x="240" y="222" width="130" height="108" fill="#6f5138" stroke="#4a3626" stroke-width="3"/>
-    <rect x="248" y="236" width="114" height="26" fill="#efe0c6"/>
-    <g><circle cx="266" cy="248" r="9" fill="#d8492f"/><circle cx="290" cy="242" r="9" fill="#f0a92c"/><circle cx="314" cy="250" r="9" fill="#4f9c3c"/><circle cx="338" cy="244" r="9" fill="#d8492f"/></g>
-    <g>
-      <rect x="292" y="278" width="6" height="34" fill="#4a3626"/>
-      <path d="M262 286 h78" stroke="#4a3626" stroke-width="6" stroke-linecap="round"/>
-      <path d="M268 292 v12 M334 292 v12" stroke="#4a3626" stroke-width="3"/>
-      <path d="M258 304 q10 -8 20 0 z" fill="#8d6e4f" stroke="#4a3626" stroke-width="2"/>
-      <path d="M324 304 q10 -8 20 0 z" fill="#8d6e4f" stroke="#4a3626" stroke-width="2"/>
-    </g>
-  </g>
-
-  <g>
-    <rect x="420" y="150" width="160" height="180" fill="#efe0c6" stroke="#8d6e4f" stroke-width="3"/>
-    <rect x="412" y="122" width="176" height="36" fill="url(#awn3)" stroke="#c9811f" stroke-width="3"/>
-    <rect x="435" y="214" width="130" height="116" fill="#7d5b3d" stroke="#4a3626" stroke-width="3"/>
-    <rect x="443" y="228" width="114" height="24" fill="#d9c7a6"/>
-    <g><circle cx="460" cy="240" r="9" fill="#8ab33d"/><circle cx="484" cy="234" r="9" fill="#e9c34a"/><circle cx="508" cy="242" r="9" fill="#c4523f"/><circle cx="532" cy="236" r="9" fill="#8ab33d"/></g>
-    <path d="M448 280 q10 18 24 4 M488 280 q10 18 24 4" stroke="#c9811f" stroke-width="5" fill="none" stroke-linecap="round"/>
-  </g>
-
-  <g>
-    <rect x="610" y="150" width="160" height="180" fill="#e9dcc6" stroke="#8d6e4f" stroke-width="3"/>
-    <rect x="602" y="122" width="176" height="36" fill="url(#awn4)" stroke="#2f6f3a" stroke-width="3"/>
-    <rect x="625" y="214" width="130" height="116" fill="#8d6e4f" stroke="#5a3f2c" stroke-width="3"/>
-    <rect x="633" y="228" width="114" height="24" fill="#efe0c6"/>
-    <g><circle cx="652" cy="240" r="9" fill="#e2513f"/><circle cx="676" cy="234" r="9" fill="#f2b134"/><circle cx="700" cy="242" r="9" fill="#79b93c"/><circle cx="724" cy="236" r="9" fill="#e2513f"/></g>
-    <path d="M638 282 q9 16 22 3 M680 282 q9 16 22 3" stroke="#2f6f3a" stroke-width="5" fill="none" stroke-linecap="round"/>
-  </g>
-
-  <g>
-    <ellipse cx="120" cy="360" rx="46" ry="16" fill="#a97c50" stroke="#7a5233" stroke-width="3"/>
-    <g><circle cx="98" cy="352" r="8" fill="#e2513f"/><circle cx="118" cy="348" r="8" fill="#f2b134"/><circle cx="138" cy="352" r="8" fill="#79b93c"/></g>
-    <ellipse cx="300" cy="366" rx="46" ry="16" fill="#a97c50" stroke="#7a5233" stroke-width="3"/>
-    <g><circle cx="278" cy="358" r="8" fill="#e9c34a"/><circle cx="298" cy="354" r="8" fill="#c4523f"/><circle cx="318" cy="358" r="8" fill="#8ab33d"/></g>
-    <ellipse cx="560" cy="362" rx="46" ry="16" fill="#a97c50" stroke="#7a5233" stroke-width="3"/>
-    <g><circle cx="538" cy="354" r="8" fill="#d8492f"/><circle cx="558" cy="350" r="8" fill="#f0a92c"/><circle cx="578" cy="354" r="8" fill="#4f9c3c"/></g>
-  </g>
-
-  <g fill="#5c6f7d">
-    <circle cx="212" cy="270" r="13"/><rect x="200" y="284" width="24" height="40" rx="10"/>
-    <circle cx="398" cy="276" r="13"/><rect x="386" y="290" width="24" height="38" rx="10"/>
-    <circle cx="596" cy="278" r="12"/><rect x="585" y="291" width="22" height="36" rx="9"/>
-  </g>
-
-  <g>
-    <rect x="58" y="392" width="120" height="12" rx="4" fill="#b5623a" stroke="#7a5233" stroke-width="3"/>
-    <rect x="58" y="360" width="10" height="44" fill="#8d6a4c"/>
-    <circle cx="70" cy="404" r="12" fill="#3a4247" stroke="#20262a" stroke-width="3"/>
-    <circle cx="166" cy="404" r="12" fill="#3a4247" stroke="#20262a" stroke-width="3"/>
-    <circle cx="96" cy="380" r="10" fill="#e2513f"/><circle cx="120" cy="376" r="10" fill="#f2b134"/><circle cx="144" cy="382" r="10" fill="#79b93c"/>
-  </g>
-
-  <path d="M0 330 h800" stroke="#a9977f" stroke-width="3"/>
-</svg>`
-    },
-    {
       id: "school",
       name: "School",
       cues: ["SCHOOL sign", "blackboard", "bell", "flag", "children with backpacks"],
@@ -537,82 +443,6 @@
     <circle cx="360" cy="256" r="12" fill="#f0c9a0" stroke="#6f4d33" stroke-width="2"/>
     <rect x="349" y="266" width="22" height="30" rx="6" fill="#c4483f" stroke="#8f2f28" stroke-width="2"/>
     <rect x="353" y="296" width="6" height="16" fill="#3a4247"/><rect x="363" y="296" width="6" height="16" fill="#3a4247"/>
-  </g>
-</svg>`
-    },
-    {
-      id: "shop",
-      name: "Shop",
-      cues: ["SHOP sign", "shopkeeper", "product shelves", "striped awning", "shopping basket"],
-      svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A single small shop with a SHOP sign, striped awning, shopkeeper behind the counter, shelves of products and a shopping basket">
-  <defs>
-    <linearGradient id="s8sky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#ffe0c2"/><stop offset="1" stop-color="#fff7ef"/>
-    </linearGradient>
-    <pattern id="awn8" width="24" height="14" patternUnits="userSpaceOnUse">
-      <rect width="24" height="14" fill="#2f8f7a"/><rect width="12" height="14" fill="#f0f7f4"/>
-    </pattern>
-  </defs>
-  <rect width="800" height="450" fill="url(#s8sky)"/>
-  <rect y="340" width="800" height="110" fill="#bdb3a4"/>
-  <path d="M0 340 h800" stroke="#a49a8b" stroke-width="4"/>
-
-  <g>
-    <rect x="150" y="150" width="440" height="190" fill="#f6ece0" stroke="#7a5c3a" stroke-width="4"/>
-    <rect x="150" y="150" width="440" height="16" fill="#d9c9b4"/>
-    <rect x="128" y="120" width="484" height="34" fill="url(#awn8)"/>
-    <rect x="128" y="120" width="484" height="7" fill="#22685a"/>
-    <rect x="128" y="150" width="484" height="6" fill="#22685a"/>
-
-    <rect x="326" y="162" width="148" height="36" rx="6" fill="#2f8f7a" stroke="#1c5a4d" stroke-width="3"/>
-    <text x="400" y="188" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="bold" fill="#ffffff" text-anchor="middle" letter-spacing="2">SHOP</text>
-
-    <rect x="182" y="212" width="190" height="128" fill="#cfe6ef" stroke="#7fa5b5" stroke-width="3"/>
-    <g stroke="#7fa5b5" stroke-width="3">
-      <path d="M182 258 h190"/>
-      <path d="M252 212 v46 M322 212 v46"/>
-      <path d="M182 300 h190"/>
-    </g>
-    <g>
-      <rect x="196" y="224" width="14" height="30" rx="4" fill="#e2574c"/>
-      <rect x="216" y="230" width="12" height="24" rx="3" fill="#e2b23c"/>
-      <rect x="234" y="226" width="13" height="28" rx="3" fill="#4f9c3c"/>
-      <rect x="286" y="232" width="22" height="22" fill="#c4483f"/>
-      <rect x="338" y="222" width="22" height="32" rx="4" fill="#8d6a4c"/>
-    </g>
-    <g>
-      <rect x="196" y="270" width="26" height="24" rx="4" fill="#d9534f"/>
-      <rect x="230" y="270" width="26" height="24" rx="4" fill="#e2b23c"/>
-      <rect x="264" y="270" width="26" height="24" rx="4" fill="#4f9c3c"/>
-      <rect x="298" y="270" width="26" height="24" rx="4" fill="#3f8fd0"/>
-      <rect x="332" y="270" width="26" height="24" rx="4" fill="#c4483f"/>
-    </g>
-
-    <g>
-      <circle cx="277" cy="286" r="16" fill="#f0c9a0" stroke="#6f4f38" stroke-width="3"/>
-      <path d="M263 278 q14 -14 28 0 v-4 q-14 -8 -28 0 z" fill="#4a3626"/>
-      <rect x="258" y="302" width="38" height="26" rx="4" fill="#f0f7f4" stroke="#6f4f38" stroke-width="3"/>
-      <path d="M258 312 h38" stroke="#2f8f7a" stroke-width="6"/>
-    </g>
-
-    <rect x="182" y="312" width="190" height="28" fill="#8d6a4c" stroke="#5a3f2c" stroke-width="3"/>
-
-    <rect x="404" y="212" width="150" height="128" fill="#6f4f38" stroke="#5a3f2c" stroke-width="4"/>
-    <rect x="404" y="212" width="150" height="10" fill="#5a3f2c"/>
-    <rect x="404" y="246" width="150" height="4" fill="#5a3f2c"/>
-    <circle cx="536" cy="280" r="7" fill="#e8c37a"/>
-    <rect x="380" y="196" width="198" height="16" fill="#8d6a4c" stroke="#5a3f2c" stroke-width="3"/>
-  </g>
-
-  <g>
-    <rect x="588" y="286" width="54" height="40" rx="4" fill="#c98a54" stroke="#7a5233" stroke-width="3"/>
-    <path d="M600 286 l10 -14 M616 286 l10 -14 M632 286 l8 -14" stroke="#7a5233" stroke-width="3" fill="none"/>
-    <circle cx="606" cy="300" r="8" fill="#e2574c"/>
-    <circle cx="626" cy="304" r="8" fill="#4f9c3c"/>
-  </g>
-  <g>
-    <rect x="660" y="296" width="26" height="44" rx="5" fill="#b5623a"/>
-    <circle cx="673" cy="288" r="20" fill="#6cb86a"/><rect x="667" y="300" width="12" height="40" fill="#7a5233"/>
   </g>
 </svg>`
     },
@@ -1494,6 +1324,554 @@
     <path d="M675 190 v-18" stroke="#6f6a58" stroke-width="4"/>
     <circle cx="675" cy="168" r="8" fill="#e23c3c" stroke="#8f2f28" stroke-width="3"/>
     <rect x="660" y="330" width="30" height="40" fill="#8a8370" stroke="#6f6a58" stroke-width="3"/>
+  </g>
+</svg>`
+    },
+    {
+      id: "shop",
+      name: "Shop",
+      cues: ["single storefront with striped awning", "shopkeeper behind counter", "products on shelf"],
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A single small shop with a striped awning and a SHOP sign, a shopkeeper behind the counter and colourful products on shelves">
+  <rect width="800" height="450" fill="#cfe6f7"/>
+  <rect y="350" width="800" height="100" fill="#bdb3a4"/>
+  <path d="M0 350 h800" stroke="#9a9080" stroke-width="4"/>
+  <g>
+    <rect x="240" y="170" width="320" height="180" fill="#f6ece0" stroke="#7a5c3a" stroke-width="4"/>
+    <rect x="226" y="140" width="348" height="36" fill="#e2574c" stroke="#a53a32" stroke-width="4"/>
+    <g fill="#fff4ec">
+      <rect x="238" y="144" width="26" height="28"/>
+      <rect x="290" y="144" width="26" height="28"/>
+      <rect x="342" y="144" width="26" height="28"/>
+      <rect x="394" y="144" width="26" height="28"/>
+      <rect x="446" y="144" width="26" height="28"/>
+      <rect x="498" y="144" width="26" height="28"/>
+      <rect x="550" y="144" width="14" height="28"/>
+    </g>
+    <rect x="300" y="96" width="200" height="42" rx="6" fill="#2f8f7a" stroke="#1c5a4d" stroke-width="4"/>
+    <text x="400" y="126" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="bold" fill="#ffffff" text-anchor="middle" letter-spacing="3">SHOP</text>
+    <rect x="262" y="200" width="110" height="80" fill="#bcd9ea" stroke="#7a5c3a" stroke-width="3"/>
+    <path d="M317 200 v80 M262 240 h110" stroke="#7a5c3a" stroke-width="3"/>
+    <rect x="430" y="200" width="110" height="80" fill="#cfe6ef" stroke="#7a5c3a" stroke-width="3"/>
+    <path d="M430 226 h110 M430 253 h110" stroke="#8fb6c4" stroke-width="3"/>
+    <g>
+      <rect x="440" y="204" width="12" height="20" rx="2" fill="#e2574c"/>
+      <rect x="458" y="206" width="12" height="18" rx="2" fill="#e8a33d"/>
+      <rect x="476" y="204" width="12" height="20" rx="2" fill="#3f8fd0"/>
+      <circle cx="500" cy="214" r="8" fill="#79b93c"/>
+      <rect x="516" y="205" width="12" height="19" rx="2" fill="#c4483f"/>
+      <rect x="440" y="230" width="14" height="20" rx="2" fill="#7a5aa8"/>
+      <rect x="462" y="232" width="12" height="18" rx="2" fill="#e2574c"/>
+      <circle cx="490" cy="240" r="8" fill="#e8a33d"/>
+      <rect x="506" y="230" width="12" height="20" rx="2" fill="#3f8fd0"/>
+    </g>
+    <rect x="250" y="292" width="300" height="34" fill="#8d6a4c" stroke="#5a3f2c" stroke-width="4"/>
+    <path d="M250 308 h300" stroke="#5a3f2c" stroke-width="3"/>
+    <circle cx="400" cy="262" r="17" fill="#f0c9a0" stroke="#6f4f38" stroke-width="3"/>
+    <path d="M383 254 q17 -16 34 0 z" fill="#4a3626"/>
+    <rect x="382" y="280" width="36" height="34" rx="6" fill="#f0f7f4" stroke="#6f4f38" stroke-width="3"/>
+    <path d="M382 296 h36" stroke="#2f8f7a" stroke-width="6"/>
+  </g>
+</svg>`
+    },
+    {
+      id: "market",
+      name: "Market",
+      cues: ["multiple stalls with colourful canopies", "vegetable baskets in front", "crowd of people"],
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="An open air market with four colourful canopy stalls, vegetable baskets and a crowd of shoppers, under a MARKET banner">
+  <rect width="800" height="450" fill="#bfe3f7"/>
+  <rect y="330" width="800" height="120" fill="#c9bda8"/>
+  <path d="M0 330 h800" stroke="#a9977f" stroke-width="4"/>
+  <g>
+    <rect x="300" y="52" width="200" height="46" rx="6" fill="#e2b23c" stroke="#a5871f" stroke-width="4"/>
+    <text x="400" y="84" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="bold" fill="#4a3626" text-anchor="middle" letter-spacing="2">MARKET</text>
+    <rect x="320" y="98" width="8" height="60" fill="#8a5a34"/>
+    <rect x="472" y="98" width="8" height="60" fill="#8a5a34"/>
+  </g>
+  <g>
+    <rect x="40" y="180" width="150" height="150" fill="#efe0c6" stroke="#8d6e4f" stroke-width="4"/>
+    <rect x="30" y="150" width="170" height="34" fill="#e2574c" stroke="#a53a32" stroke-width="4"/>
+    <rect x="58" y="216" width="114" height="70" fill="#8d6e4f" stroke="#5a3f2c" stroke-width="3"/>
+    <g fill="#f2b134"><circle cx="76" cy="240" r="8"/><circle cx="98" cy="234" r="8"/><circle cx="120" cy="240" r="8"/><circle cx="142" cy="234" r="8"/></g>
+    <path d="M62 286 q8 14 18 0 M110 286 q8 14 18 0" stroke="#a53a32" stroke-width="4" fill="none" stroke-linecap="round"/>
+  </g>
+  <g>
+    <rect x="215" y="180" width="150" height="150" fill="#e6d6bb" stroke="#8d6e4f" stroke-width="4"/>
+    <rect x="205" y="150" width="170" height="34" fill="#3f8fd0" stroke="#2a6ea6" stroke-width="4"/>
+    <rect x="233" y="216" width="114" height="70" fill="#6f5138" stroke="#4a3626" stroke-width="3"/>
+    <g fill="#e2513f"><circle cx="252" cy="240" r="8"/><circle cx="274" cy="234" r="8"/><circle cx="296" cy="240" r="8"/><circle cx="318" cy="234" r="8"/></g>
+  </g>
+  <g>
+    <rect x="390" y="180" width="150" height="150" fill="#efe0c6" stroke="#8d6e4f" stroke-width="4"/>
+    <rect x="380" y="150" width="170" height="34" fill="#e8a33d" stroke="#c9811f" stroke-width="4"/>
+    <rect x="408" y="216" width="114" height="70" fill="#7d5b3d" stroke="#4a3626" stroke-width="3"/>
+    <g fill="#79b93c"><circle cx="428" cy="240" r="8"/><circle cx="450" cy="234" r="8"/><circle cx="472" cy="240" r="8"/><circle cx="494" cy="234" r="8"/></g>
+  </g>
+  <g>
+    <rect x="565" y="180" width="150" height="150" fill="#e9dcc6" stroke="#8d6e4f" stroke-width="4"/>
+    <rect x="555" y="150" width="170" height="34" fill="#4f9c5c" stroke="#2f6f3a" stroke-width="4"/>
+    <rect x="583" y="216" width="114" height="70" fill="#8d6e4f" stroke="#5a3f2c" stroke-width="3"/>
+    <g fill="#f2b134"><circle cx="602" cy="240" r="8"/><circle cx="624" cy="234" r="8"/><circle cx="646" cy="240" r="8"/><circle cx="668" cy="234" r="8"/></g>
+  </g>
+  <g>
+    <ellipse cx="130" cy="352" rx="46" ry="15" fill="#a97c50" stroke="#7a5233" stroke-width="3"/>
+    <g><circle cx="110" cy="346" r="7" fill="#e2513f"/><circle cx="130" cy="342" r="7" fill="#f2b134"/><circle cx="150" cy="346" r="7" fill="#79b93c"/></g>
+    <ellipse cx="470" cy="356" rx="46" ry="15" fill="#a97c50" stroke="#7a5233" stroke-width="3"/>
+    <g><circle cx="450" cy="350" r="7" fill="#8ab33d"/><circle cx="470" cy="346" r="7" fill="#c4523f"/><circle cx="490" cy="350" r="7" fill="#e9c34a"/></g>
+    <ellipse cx="700" cy="352" rx="46" ry="15" fill="#a97c50" stroke="#7a5233" stroke-width="3"/>
+    <g><circle cx="680" cy="346" r="7" fill="#e2513f"/><circle cx="700" cy="342" r="7" fill="#79b93c"/><circle cx="720" cy="346" r="7" fill="#f2b134"/></g>
+  </g>
+  <g fill="#5c6f7d">
+    <circle cx="200" cy="300" r="12"/><rect x="189" y="312" width="22" height="34" rx="9"/>
+    <circle cx="366" cy="306" r="12"/><rect x="355" y="318" width="22" height="32" rx="9"/>
+    <circle cx="540" cy="302" r="12"/><rect x="529" y="314" width="22" height="34" rx="9"/>
+  </g>
+</svg>`
+    },
+    {
+      id: "grocery-store",
+      name: "Grocery Store",
+      cues: ["rice bags stacked", "pulses in open sacks", "weighing scale on counter"],
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="Inside a grocery store with a GROCERY sign, a shelf of packaged goods, stacked rice sacks, open sacks of pulses and a weighing scale on the counter">
+  <rect width="800" height="450" fill="#efe3cf"/>
+  <rect y="330" width="800" height="120" fill="#c9b494"/>
+  <path d="M0 330 h800" stroke="#ab9676" stroke-width="4"/>
+  <text x="400" y="54" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="bold" fill="#6f4526" text-anchor="middle" letter-spacing="5">GROCERY</text>
+  <g>
+    <rect x="40" y="90" width="240" height="230" fill="#c9a06a" stroke="#8a5a34" stroke-width="4"/>
+    <g stroke="#8a5a34" stroke-width="4"><path d="M40 148 h240 M40 206 h240 M40 264 h240"/></g>
+    <rect x="54" y="104" width="22" height="40" rx="3" fill="#3f8fd0"/><rect x="82" y="112" width="18" height="32" rx="3" fill="#e2574c"/>
+    <rect x="106" y="100" width="24" height="44" rx="3" fill="#e8a33d"/><rect x="136" y="110" width="18" height="34" rx="3" fill="#79b93c"/>
+    <rect x="160" y="104" width="22" height="40" rx="3" fill="#c4483f"/><rect x="188" y="112" width="18" height="32" rx="3" fill="#7a5aa8"/>
+    <rect x="212" y="100" width="24" height="44" rx="3" fill="#2f8f7a"/><rect x="242" y="108" width="18" height="36" rx="3" fill="#e2574c"/>
+    <rect x="54" y="162" width="24" height="40" rx="3" fill="#e8a33d"/><rect x="84" y="170" width="18" height="32" rx="3" fill="#3f8fd0"/>
+    <rect x="110" y="160" width="22" height="42" rx="3" fill="#79b93c"/><rect x="138" y="168" width="18" height="34" rx="3" fill="#c4483f"/>
+    <rect x="162" y="162" width="24" height="40" rx="3" fill="#7a5aa8"/><rect x="192" y="170" width="18" height="32" rx="3" fill="#2f8f7a"/>
+    <rect x="216" y="160" width="22" height="42" rx="3" fill="#e2574c"/><rect x="244" y="168" width="18" height="34" rx="3" fill="#e8a33d"/>
+    <rect x="54" y="220" width="22" height="40" rx="3" fill="#c4483f"/><rect x="82" y="228" width="18" height="32" rx="3" fill="#79b93c"/>
+    <rect x="106" y="218" width="24" height="42" rx="3" fill="#3f8fd0"/><rect x="136" y="226" width="18" height="34" rx="3" fill="#e2574c"/>
+    <rect x="160" y="220" width="22" height="40" rx="3" fill="#2f8f7a"/><rect x="188" y="228" width="18" height="32" rx="3" fill="#e8a33d"/>
+    <rect x="212" y="218" width="24" height="42" rx="3" fill="#7a5aa8"/><rect x="242" y="226" width="18" height="34" rx="3" fill="#79b93c"/>
+  </g>
+  <g>
+    <rect x="300" y="300" width="220" height="40" fill="#8a5a34" stroke="#5a3f2c" stroke-width="4"/>
+    <path d="M300 312 h220" stroke="#5a3f2c" stroke-width="3"/>
+    <rect x="404" y="236" width="12" height="64" fill="#6f6a58" stroke="#4a463c" stroke-width="2"/>
+    <path d="M340 240 h140" stroke="#6f6a58" stroke-width="8" stroke-linecap="round"/>
+    <path d="M410 240 v-14" stroke="#6f6a58" stroke-width="4"/>
+    <circle cx="410" cy="222" r="7" fill="#c3ccd2" stroke="#6f6a58" stroke-width="2"/>
+    <path d="M336 240 l-14 26 h28 z" fill="#c3ccd2" stroke="#6f6a58" stroke-width="3"/>
+    <path d="M484 240 l-14 26 h28 z" fill="#c3ccd2" stroke="#6f6a58" stroke-width="3"/>
+    <path d="M322 266 h28" stroke="#6f6a58" stroke-width="4"/>
+    <path d="M470 266 h28" stroke="#6f6a58" stroke-width="4"/>
+  </g>
+  <g>
+    <rect x="556" y="252" width="88" height="52" rx="8" fill="#f2e6d0" stroke="#b09060" stroke-width="3"/>
+    <path d="M556 262 h88" stroke="#d8c4a0" stroke-width="3"/>
+    <text x="600" y="290" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" fill="#8a5a34" text-anchor="middle">RICE</text>
+    <rect x="600" y="304" width="88" height="52" rx="8" fill="#f2e6d0" stroke="#b09060" stroke-width="3"/>
+    <path d="M600 314 h88" stroke="#d8c4a0" stroke-width="3"/>
+    <text x="644" y="342" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" fill="#8a5a34" text-anchor="middle">RICE</text>
+    <rect x="512" y="304" width="88" height="52" rx="8" fill="#f2e6d0" stroke="#b09060" stroke-width="3"/>
+    <path d="M512 314 h88" stroke="#d8c4a0" stroke-width="3"/>
+    <text x="556" y="342" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" fill="#8a5a34" text-anchor="middle">RICE</text>
+  </g>
+  <g>
+    <path d="M360 380 q34 -16 68 0 q-8 26 -34 26 q-26 0 -34 -26 z" fill="#c98a54" stroke="#8a5a34" stroke-width="3"/>
+    <path d="M368 380 q26 -14 52 0" fill="none" stroke="#8a5a34" stroke-width="3"/>
+    <g fill="#f2b134"><circle cx="382" cy="388" r="5"/><circle cx="398" cy="384" r="5"/><circle cx="414" cy="388" r="5"/></g>
+    <path d="M470 384 q34 -16 68 0 q-8 26 -34 26 q-26 0 -34 -26 z" fill="#b58a5a" stroke="#8a5a34" stroke-width="3"/>
+    <path d="M478 384 q26 -14 52 0" fill="none" stroke="#8a5a34" stroke-width="3"/>
+    <g fill="#79b93c"><circle cx="492" cy="392" r="5"/><circle cx="508" cy="388" r="5"/><circle cx="524" cy="392" r="5"/></g>
+    <g fill="#e2574c"><circle cx="500" cy="398" r="4"/><circle cx="516" cy="396" r="4"/></g>
+  </g>
+</svg>`
+    },
+    {
+      id: "bakery",
+      name: "Bakery",
+      cues: ["bread loaves and buns on display", "oven with chimney", "chef with tall white hat"],
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A bakery with a BAKERY sign, a brick oven with a chimney, loaves and buns on display and a chef in a tall white hat">
+  <rect width="800" height="450" fill="#f6e0c0"/>
+  <rect y="330" width="800" height="120" fill="#c98a4a"/>
+  <path d="M0 330 h800" stroke="#a56f38" stroke-width="4"/>
+  <rect x="240" y="60" width="320" height="46" rx="6" fill="#c4483f" stroke="#8f2f28" stroke-width="4"/>
+  <text x="400" y="92" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="bold" fill="#ffffff" text-anchor="middle" letter-spacing="3">BAKERY</text>
+  <g>
+    <rect x="470" y="150" width="270" height="180" fill="#b55a3f" stroke="#6f3423" stroke-width="4"/>
+    <rect x="500" y="60" width="40" height="90" fill="#8a5a34" stroke="#5a3f2c" stroke-width="4"/>
+    <rect x="494" y="52" width="52" height="12" rx="3" fill="#6f4526"/>
+    <g fill="#cdd3d8"><circle cx="520" cy="40" r="10"/><circle cx="540" cy="26" r="8"/><circle cx="506" cy="26" r="7"/></g>
+    <path d="M540 240 a60 55 0 0 1 120 0 v90 h-120 z" fill="#5a2f1f" stroke="#3f1f14" stroke-width="4"/>
+    <path d="M556 270 a44 40 0 0 1 88 0 v60 h-88 z" fill="#f2b134" stroke="#c9811f" stroke-width="3"/>
+    <g fill="#e2582a"><circle cx="580" cy="330" r="7"/><circle cx="620" cy="332" r="7"/><circle cx="600" cy="336" r="7"/></g>
+    <rect x="500" y="336" width="200" height="14" fill="#8a5a34" stroke="#5a3f2c" stroke-width="3"/>
+  </g>
+  <g>
+    <rect x="60" y="230" width="300" height="20" fill="#a97c50" stroke="#7a5233" stroke-width="3"/>
+    <rect x="80" y="250" width="16" height="90" fill="#8a5a34"/>
+    <rect x="320" y="250" width="16" height="90" fill="#8a5a34"/>
+    <g>
+      <ellipse cx="120" cy="214" rx="34" ry="20" fill="#e0a54f" stroke="#a56f38" stroke-width="3"/>
+      <path d="M96 206 q24 -14 48 0" fill="none" stroke="#a56f38" stroke-width="3"/>
+      <ellipse cx="180" cy="214" rx="34" ry="20" fill="#d98f3d" stroke="#a56f38" stroke-width="3"/>
+      <path d="M156 206 q24 -14 48 0" fill="none" stroke="#a56f38" stroke-width="3"/>
+      <ellipse cx="250" cy="216" rx="30" ry="17" fill="#e8b566" stroke="#a56f38" stroke-width="3"/>
+      <ellipse cx="305" cy="216" rx="30" ry="17" fill="#d98f3d" stroke="#a56f38" stroke-width="3"/>
+    </g>
+    <g fill="#e8b566" stroke="#a56f38" stroke-width="3">
+      <circle cx="120" cy="242" r="12"/><circle cx="150" cy="244" r="12"/><circle cx="180" cy="242" r="12"/>
+      <circle cx="210" cy="244" r="12"/><circle cx="240" cy="242" r="12"/><circle cx="270" cy="244" r="12"/><circle cx="300" cy="242" r="12"/>
+    </g>
+  </g>
+  <g>
+    <circle cx="410" cy="240" r="18" fill="#f0c9a0" stroke="#6f4d33" stroke-width="3"/>
+    <path d="M392 232 q18 -16 36 0 z" fill="#4a3626"/>
+    <rect x="388" y="212" width="44" height="26" rx="8" fill="#ffffff" stroke="#33445c" stroke-width="3"/>
+    <rect x="388" y="234" width="44" height="8" rx="3" fill="#ffffff" stroke="#33445c" stroke-width="3"/>
+    <rect x="392" y="260" width="36" height="50" rx="8" fill="#ffffff" stroke="#33445c" stroke-width="3"/>
+    <path d="M410 268 v34" stroke="#33445c" stroke-width="3"/>
+    <circle cx="410" cy="280" r="3" fill="#33445c"/><circle cx="410" cy="292" r="3" fill="#33445c"/>
+    <rect x="378" y="266" width="14" height="30" rx="6" fill="#ffffff" stroke="#33445c" stroke-width="3"/>
+    <rect x="428" y="266" width="14" height="30" rx="6" fill="#ffffff" stroke="#33445c" stroke-width="3"/>
+    <rect x="394" y="310" width="10" height="26" fill="#33445c"/>
+    <rect x="416" y="310" width="10" height="26" fill="#33445c"/>
+  </g>
+</svg>`
+    },
+    {
+      id: "sweet-shop",
+      name: "Sweet Shop",
+      cues: ["trays of colourful mithai", "glass display counter", "silver foil pieces"],
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A sweet shop with a SWEETS sign, a glass display counter full of colourful laddoo and barfi sweets and silver foil pieces">
+  <rect width="800" height="450" fill="#f2d9b0"/>
+  <rect y="330" width="800" height="120" fill="#b58a5a"/>
+  <path d="M0 330 h800" stroke="#96703f" stroke-width="4"/>
+  <rect x="250" y="56" width="300" height="46" rx="6" fill="#c4483f" stroke="#8f2f28" stroke-width="4"/>
+  <text x="400" y="88" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="bold" fill="#ffffff" text-anchor="middle" letter-spacing="3">SWEETS</text>
+  <g>
+    <rect x="140" y="200" width="520" height="130" rx="10" fill="#cfe6ef" stroke="#5b87a3" stroke-width="4"/>
+    <rect x="140" y="200" width="520" height="20" fill="#bcd9ea" stroke="#5b87a3" stroke-width="3"/>
+    <rect x="140" y="322" width="520" height="18" fill="#8a5a34" stroke="#5a3f2c" stroke-width="4"/>
+    <g stroke="#5b87a3" stroke-width="3"><path d="M270 200 v130 M400 200 v130 M530 200 v130"/></g>
+    <g>
+      <circle cx="200" cy="250" r="18" fill="#f2a63c" stroke="#c9811f" stroke-width="3"/>
+      <circle cx="200" cy="288" r="18" fill="#e8b23c" stroke="#c9811f" stroke-width="3"/>
+      <circle cx="240" cy="268" r="18" fill="#f2a63c" stroke="#c9811f" stroke-width="3"/>
+      <circle cx="240" cy="230" r="18" fill="#e88a3c" stroke="#c9811f" stroke-width="3"/>
+    </g>
+    <g>
+      <path d="M300 236 l22 22 l-22 22 l-22 -22 z" fill="#e2574c" stroke="#a53a32" stroke-width="3"/>
+      <path d="M344 236 l22 22 l-22 22 l-22 -22 z" fill="#f2d24b" stroke="#c9a51f" stroke-width="3"/>
+      <path d="M322 274 l22 22 l-22 22 l-22 -22 z" fill="#79b93c" stroke="#4f8a2a" stroke-width="3"/>
+    </g>
+    <g>
+      <rect x="430" y="232" width="44" height="44" rx="8" fill="#f2d24b" stroke="#c9a51f" stroke-width="3"/>
+      <rect x="490" y="232" width="44" height="44" rx="8" fill="#c98a54" stroke="#8a5a34" stroke-width="3"/>
+      <rect x="460" y="282" width="44" height="26" rx="6" fill="#e2574c" stroke="#a53a32" stroke-width="3"/>
+    </g>
+    <g>
+      <path d="M580 236 l20 20 l-20 20 l-20 -20 z" fill="#f2f2f2" stroke="#9aa0a6" stroke-width="3"/>
+      <path d="M620 236 l20 20 l-20 20 l-20 -20 z" fill="#e8eef2" stroke="#9aa0a6" stroke-width="3"/>
+      <circle cx="600" cy="300" r="20" fill="#f2a63c" stroke="#c9811f" stroke-width="3"/>
+    </g>
+  </g>
+</svg>`
+    },
+    {
+      id: "tea-stall",
+      name: "Tea Stall",
+      cues: ["large kettle with steam", "small cups on tray", "wooden bench with a person"],
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A tea stall with a TEA sign, a big kettle with steam, a tray of small cups and a wooden bench with a person sitting">
+  <rect width="800" height="450" fill="#cfe6f7"/>
+  <rect y="340" width="800" height="110" fill="#9aa08a"/>
+  <path d="M0 340 h800" stroke="#7f8570" stroke-width="4"/>
+  <rect x="300" y="60" width="200" height="44" rx="6" fill="#c4483f" stroke="#8f2f28" stroke-width="4"/>
+  <text x="400" y="90" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="bold" fill="#ffffff" text-anchor="middle" letter-spacing="3">TEA</text>
+  <g>
+    <rect x="200" y="250" width="360" height="100" fill="#a97c50" stroke="#7a5233" stroke-width="4"/>
+    <rect x="190" y="238" width="380" height="18" rx="4" fill="#c98a54" stroke="#7a5233" stroke-width="3"/>
+    <path d="M200 288 h360" stroke="#7a5233" stroke-width="3"/>
+  </g>
+  <g>
+    <path d="M300 238 q-16 -22 0 -40 q16 -18 0 -34" fill="none" stroke="#dfe6ea" stroke-width="6" stroke-linecap="round"/>
+    <path d="M360 238 q-16 -22 0 -40 q16 -18 0 -34" fill="none" stroke="#dfe6ea" stroke-width="6" stroke-linecap="round"/>
+    <rect x="270" y="150" width="120" height="88" rx="12" fill="#3a4247" stroke="#20262a" stroke-width="4"/>
+    <rect x="270" y="150" width="120" height="14" rx="6" fill="#5a6268"/>
+    <path d="M390 172 q40 6 40 34 q0 28 -40 34" fill="none" stroke="#20262a" stroke-width="8"/>
+    <rect x="318" y="122" width="24" height="30" rx="6" fill="#3a4247" stroke="#20262a" stroke-width="3"/>
+    <rect x="330" y="138" width="70" height="12" rx="6" fill="#3a4247" stroke="#20262a" stroke-width="3"/>
+    <circle cx="330" cy="196" r="7" fill="#f2d24b"/>
+  </g>
+  <g>
+    <rect x="430" y="250" width="150" height="14" rx="4" fill="#c98a54" stroke="#7a5233" stroke-width="3"/>
+    <rect x="452" y="264" width="10" height="24" fill="#8a5a34"/>
+    <rect x="548" y="264" width="10" height="24" fill="#8a5a34"/>
+    <g>
+      <rect x="444" y="230" width="24" height="20" rx="3" fill="#ffffff" stroke="#8a5a34" stroke-width="3"/>
+      <rect x="474" y="230" width="24" height="20" rx="3" fill="#ffffff" stroke="#8a5a34" stroke-width="3"/>
+      <rect x="504" y="230" width="24" height="20" rx="3" fill="#ffffff" stroke="#8a5a34" stroke-width="3"/>
+      <rect x="534" y="230" width="24" height="20" rx="3" fill="#ffffff" stroke="#8a5a34" stroke-width="3"/>
+      <path d="M486 230 q6 -10 12 0" fill="none" stroke="#dfe6ea" stroke-width="3"/>
+      <path d="M516 230 q6 -10 12 0" fill="none" stroke="#dfe6ea" stroke-width="3"/>
+    </g>
+  </g>
+  <g>
+    <rect x="620" y="300" width="130" height="16" rx="4" fill="#a97c50" stroke="#7a5233" stroke-width="3"/>
+    <rect x="628" y="316" width="12" height="34" fill="#8a5a34"/>
+    <rect x="730" y="316" width="12" height="34" fill="#8a5a34"/>
+    <rect x="620" y="270" width="130" height="14" rx="4" fill="#a97c50" stroke="#7a5233" stroke-width="3"/>
+    <circle cx="650" cy="250" r="16" fill="#f0c9a0" stroke="#6f4d33" stroke-width="3"/>
+    <path d="M634 242 q16 -14 32 0 z" fill="#4a3626"/>
+    <rect x="636" y="266" width="28" height="40" rx="8" fill="#3f8fd0" stroke="#2c6699" stroke-width="3"/>
+    <rect x="628" y="284" width="16" height="8" rx="4" fill="#2c6699"/>
+    <rect x="656" y="284" width="16" height="8" rx="4" fill="#2c6699"/>
+  </g>
+</svg>`
+    },
+    {
+      id: "vegetable-market",
+      name: "Vegetable Market",
+      cues: ["green vegetables in baskets", "vendor figure", "weighing scale"],
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A vegetable market with a SABZI MANDI sign, baskets of green vegetables, a vendor and a weighing scale">
+  <rect width="800" height="450" fill="#bfe3f7"/>
+  <rect y="330" width="800" height="120" fill="#c9bda8"/>
+  <path d="M0 330 h800" stroke="#a9977f" stroke-width="4"/>
+  <g>
+    <rect x="230" y="52" width="340" height="48" rx="6" fill="#2f8f4a" stroke="#1c5a2e" stroke-width="4"/>
+    <text x="400" y="86" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="bold" fill="#ffffff" text-anchor="middle" letter-spacing="2">SABZI MANDI</text>
+    <rect x="250" y="100" width="8" height="60" fill="#8a5a34"/>
+    <rect x="542" y="100" width="8" height="60" fill="#8a5a34"/>
+  </g>
+  <g>
+    <ellipse cx="150" cy="300" rx="70" ry="24" fill="#a97c50" stroke="#7a5233" stroke-width="4"/>
+    <path d="M80 300 h140 M104 288 h92" stroke="#7a5233" stroke-width="3"/>
+    <g>
+      <path d="M110 288 q10 -30 -4 -46" stroke="#4f9c3c" stroke-width="8" fill="none" stroke-linecap="round"/>
+      <path d="M130 286 q10 -32 -2 -50" stroke="#5cb04a" stroke-width="8" fill="none" stroke-linecap="round"/>
+      <path d="M150 288 q10 -30 -4 -46" stroke="#4f9c3c" stroke-width="8" fill="none" stroke-linecap="round"/>
+      <path d="M170 286 q10 -32 -2 -50" stroke="#5cb04a" stroke-width="8" fill="none" stroke-linecap="round"/>
+      <path d="M190 288 q10 -30 -4 -46" stroke="#4f9c3c" stroke-width="8" fill="none" stroke-linecap="round"/>
+    </g>
+  </g>
+  <g>
+    <ellipse cx="360" cy="306" rx="72" ry="26" fill="#a97c50" stroke="#7a5233" stroke-width="4"/>
+    <path d="M288 306 h144 M314 292 h92" stroke="#7a5233" stroke-width="3"/>
+    <g>
+      <circle cx="320" cy="284" r="12" fill="#e2574c" stroke="#a53a32" stroke-width="2"/>
+      <circle cx="348" cy="280" r="12" fill="#5cb04a" stroke="#35702f" stroke-width="2"/>
+      <circle cx="376" cy="284" r="12" fill="#e2574c" stroke="#a53a32" stroke-width="2"/>
+      <circle cx="404" cy="280" r="12" fill="#5cb04a" stroke="#35702f" stroke-width="2"/>
+      <circle cx="334" cy="296" r="12" fill="#e88a3c" stroke="#b5651f" stroke-width="2"/>
+      <circle cx="362" cy="298" r="12" fill="#e2574c" stroke="#a53a32" stroke-width="2"/>
+      <circle cx="390" cy="296" r="12" fill="#e88a3c" stroke="#b5651f" stroke-width="2"/>
+    </g>
+  </g>
+  <g>
+    <ellipse cx="600" cy="302" rx="70" ry="24" fill="#a97c50" stroke="#7a5233" stroke-width="4"/>
+    <g>
+      <path d="M560 292 q6 -34 -2 -52" stroke="#4f9c3c" stroke-width="9" fill="none" stroke-linecap="round"/>
+      <path d="M582 290 q6 -36 -2 -54" stroke="#5cb04a" stroke-width="9" fill="none" stroke-linecap="round"/>
+      <path d="M604 292 q6 -34 -2 -52" stroke="#4f9c3c" stroke-width="9" fill="none" stroke-linecap="round"/>
+      <path d="M626 290 q6 -36 -2 -54" stroke="#5cb04a" stroke-width="9" fill="none" stroke-linecap="round"/>
+      <path d="M648 292 q6 -34 -2 -52" stroke="#4f9c3c" stroke-width="9" fill="none" stroke-linecap="round"/>
+    </g>
+  </g>
+  <g>
+    <circle cx="490" cy="220" r="17" fill="#f0c9a0" stroke="#6f4d33" stroke-width="3"/>
+    <path d="M473 212 q17 -16 34 0 z" fill="#4a3626"/>
+    <rect x="472" y="240" width="36" height="60" rx="8" fill="#e2b23c" stroke="#a5871f" stroke-width="3"/>
+    <rect x="460" y="246" width="16" height="34" rx="7" fill="#e2b23c" stroke="#a5871f" stroke-width="3"/>
+    <rect x="504" y="246" width="16" height="34" rx="7" fill="#e2b23c" stroke="#a5871f" stroke-width="3"/>
+    <rect x="478" y="300" width="9" height="30" fill="#7a5233"/>
+    <rect x="492" y="300" width="9" height="30" fill="#7a5233"/>
+  </g>
+  <g>
+    <rect x="640" y="200" width="12" height="90" fill="#6f6a58" stroke="#4a463c" stroke-width="2"/>
+    <path d="M590 200 h112" stroke="#6f6a58" stroke-width="7" stroke-linecap="round"/>
+    <path d="M646 200 v-16" stroke="#6f6a58" stroke-width="4"/>
+    <path d="M584 200 l-14 26 h28 z" fill="#c3ccd2" stroke="#6f6a58" stroke-width="3"/>
+    <path d="M708 200 l-14 26 h28 z" fill="#c3ccd2" stroke="#6f6a58" stroke-width="3"/>
+  </g>
+</svg>`
+    },
+    {
+      id: "fruit-market",
+      name: "Fruit Market",
+      cues: ["mangoes and bananas in a cart", "fruit vendor", "colourful fruit pile"],
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A fruit market with a FRUITS sign, a wooden cart piled with colourful mangoes and bananas, a fruit vendor and a pile of fruit">
+  <rect width="800" height="450" fill="#ffe0b3"/>
+  <rect y="340" width="800" height="110" fill="#c9bda8"/>
+  <path d="M0 340 h800" stroke="#a9977f" stroke-width="4"/>
+  <rect x="270" y="56" width="260" height="46" rx="6" fill="#e2574c" stroke="#a53a32" stroke-width="4"/>
+  <text x="400" y="88" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="bold" fill="#ffffff" text-anchor="middle" letter-spacing="3">FRUITS</text>
+  <g>
+    <path d="M170 360 h420 l-30 -70 h-360 z" fill="#c98a54" stroke="#8a5a34" stroke-width="4"/>
+    <rect x="150" y="360" width="460" height="18" rx="6" fill="#a97c50" stroke="#7a5233" stroke-width="4"/>
+    <circle cx="230" cy="392" r="26" fill="#3a4247" stroke="#20262a" stroke-width="3"/><circle cx="230" cy="392" r="9" fill="#c3ccd2"/>
+    <circle cx="530" cy="392" r="26" fill="#3a4247" stroke="#20262a" stroke-width="3"/><circle cx="530" cy="392" r="9" fill="#c3ccd2"/>
+    <path d="M150 368 l-30 12" stroke="#7a5233" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <g>
+    <g fill="#f2b134" stroke="#c9811f" stroke-width="3">
+      <circle cx="250" cy="300" r="24"/><circle cx="300" cy="288" r="24"/><circle cx="350" cy="300" r="24"/>
+      <circle cx="400" cy="286" r="24"/><circle cx="450" cy="300" r="24"/>
+      <circle cx="275" cy="258" r="24"/><circle cx="325" cy="246" r="24"/><circle cx="375" cy="258" r="24"/><circle cx="425" cy="246" r="24"/>
+      <circle cx="300" cy="216" r="24"/><circle cx="350" cy="206" r="24"/><circle cx="400" cy="216" r="24"/>
+    </g>
+    <g stroke="#b5651f" stroke-width="3" fill="none">
+      <path d="M250 276 v-8 M300 264 v-8 M350 276 v-8 M400 262 v-8 M450 276 v-8"/>
+    </g>
+  </g>
+  <g>
+    <path d="M470 230 q60 -20 120 10 q-8 30 -60 30 q-52 0 -60 -40 z" fill="#f2d24b" stroke="#c9a51f" stroke-width="3"/>
+    <g fill="#f2d24b" stroke="#c9a51f" stroke-width="3">
+      <path d="M486 224 q6 -14 16 -4 q-8 10 -16 4 z"/>
+      <path d="M512 216 q8 -14 18 -6 q-6 12 -18 6 z"/>
+      <path d="M540 214 q8 -14 18 -6 q-6 12 -18 6 z"/>
+      <path d="M568 220 q8 -14 18 -6 q-6 12 -18 6 z"/>
+    </g>
+  </g>
+  <g>
+    <circle cx="600" cy="180" r="18" fill="#f0c9a0" stroke="#6f4d33" stroke-width="3"/>
+    <path d="M582 172 q18 -18 36 0 z" fill="#4a3626"/>
+    <path d="M582 172 q-14 2 -16 12 q12 0 18 -6 z" fill="#4a3626"/>
+    <rect x="582" y="200" width="36" height="60" rx="8" fill="#3f8fd0" stroke="#2c6699" stroke-width="3"/>
+    <rect x="570" y="206" width="16" height="36" rx="7" fill="#3f8fd0" stroke="#2c6699" stroke-width="3"/>
+    <rect x="614" y="206" width="16" height="36" rx="7" fill="#3f8fd0" stroke="#2c6699" stroke-width="3"/>
+    <rect x="588" y="260" width="9" height="80" fill="#3a4247"/>
+    <rect x="602" y="260" width="9" height="80" fill="#3a4247"/>
+  </g>
+  <g>
+    <ellipse cx="150" cy="392" rx="40" ry="14" fill="#a97c50" stroke="#7a5233" stroke-width="3"/>
+    <g fill="#e2574c"><circle cx="132" cy="386" r="8"/><circle cx="152" cy="382" r="8"/><circle cx="170" cy="386" r="8"/></g>
+    <g fill="#7a5aa8"><circle cx="660" cy="384" r="8"/><circle cx="680" cy="380" r="8"/><circle cx="700" cy="384" r="8"/></g>
+  </g>
+</svg>`
+    },
+    {
+      id: "flower-shop",
+      name: "Flower Shop",
+      cues: ["flower garlands hanging", "roses in pots", "flower vendor arranging"],
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A flower shop with a FLOWERS sign, hanging flower garlands, roses in pots and a flower vendor arranging a bouquet">
+  <rect width="800" height="450" fill="#e8f4fd"/>
+  <rect y="340" width="800" height="110" fill="#b9a98f"/>
+  <path d="M0 340 h800" stroke="#9a8a70" stroke-width="4"/>
+  <rect x="260" y="60" width="280" height="46" rx="6" fill="#c4483f" stroke="#8f2f28" stroke-width="4"/>
+  <text x="400" y="92" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="bold" fill="#ffffff" text-anchor="middle" letter-spacing="2">FLOWERS</text>
+  <g>
+    <rect x="120" y="120" width="560" height="16" rx="6" fill="#8a5a34" stroke="#5a3f2c" stroke-width="3"/>
+    <rect x="130" y="136" width="10" height="40" fill="#8a5a34"/>
+    <rect x="660" y="136" width="10" height="40" fill="#8a5a34"/>
+  </g>
+  <g>
+    <g stroke="#4f9c3c" stroke-width="4">
+      <path d="M170 128 v120 M200 128 v140 M230 128 v110 M260 128 v130"/>
+    </g>
+    <g>
+      <circle cx="170" cy="160" r="13" fill="#e2574c"/><circle cx="170" cy="196" r="13" fill="#f2a63c"/><circle cx="170" cy="232" r="13" fill="#e2574c"/>
+      <circle cx="200" cy="160" r="13" fill="#f2d24b"/><circle cx="200" cy="196" r="13" fill="#e2574c"/><circle cx="200" cy="232" r="13" fill="#ff8fb0"/><circle cx="200" cy="266" r="13" fill="#f2d24b"/>
+      <circle cx="230" cy="160" r="13" fill="#ff8fb0"/><circle cx="230" cy="196" r="13" fill="#e2574c"/><circle cx="230" cy="232" r="13" fill="#f2a63c"/>
+      <circle cx="260" cy="160" r="13" fill="#e2574c"/><circle cx="260" cy="196" r="13" fill="#f2d24b"/><circle cx="260" cy="232" r="13" fill="#ff8fb0"/>
+    </g>
+  </g>
+  <g>
+    <g stroke="#7a5233" stroke-width="4">
+      <rect x="620" y="200" width="10" height="140"/>
+      <rect x="700" y="200" width="10" height="140"/>
+    </g>
+    <g>
+      <circle cx="625" cy="180" r="14" fill="#ff8fb0"/><circle cx="625" cy="216" r="14" fill="#e2574c"/><circle cx="625" cy="252" r="14" fill="#f2a63c"/>
+      <circle cx="705" cy="180" r="14" fill="#e2574c"/><circle cx="705" cy="216" r="14" fill="#f2d24b"/><circle cx="705" cy="252" r="14" fill="#ff8fb0"/>
+    </g>
+  </g>
+  <g>
+    <path d="M380 260 h120 l-14 80 h-92 z" fill="#c98a54" stroke="#8a5a34" stroke-width="4"/>
+    <g>
+      <circle cx="410" cy="230" r="22" fill="#e2574c" stroke="#a53a32" stroke-width="2"/>
+      <circle cx="440" cy="212" r="22" fill="#ff8fb0" stroke="#c96a86" stroke-width="2"/>
+      <circle cx="470" cy="230" r="22" fill="#f2d24b" stroke="#c9a51f" stroke-width="2"/>
+      <circle cx="440" cy="248" r="22" fill="#f2a63c" stroke="#c9811f" stroke-width="2"/>
+    </g>
+    <path d="M440 268 v-40" stroke="#4f9c3c" stroke-width="5"/>
+  </g>
+  <g>
+    <circle cx="540" cy="250" r="17" fill="#f0c9a0" stroke="#6f4d33" stroke-width="3"/>
+    <path d="M523 242 q17 -16 34 0 z" fill="#4a3626"/>
+    <rect x="522" y="270" width="36" height="60" rx="8" fill="#4f9c5c" stroke="#35702f" stroke-width="3"/>
+    <rect x="510" y="276" width="16" height="34" rx="7" fill="#4f9c5c" stroke="#35702f" stroke-width="3"/>
+    <rect x="554" y="276" width="16" height="34" rx="7" fill="#4f9c5c" stroke="#35702f" stroke-width="3"/>
+    <rect x="528" y="330" width="9" height="30" fill="#3a4247"/>
+    <rect x="542" y="330" width="9" height="30" fill="#3a4247"/>
+  </g>
+</svg>`
+    },
+    {
+      id: "bookstore",
+      name: "Bookstore",
+      cues: ["books on wooden shelves", "reading chair with book", "stack of books on floor"],
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A bookstore with a BOOKS sign, wooden shelves full of colourful books, a red reading armchair with an open book and a stack of books on the floor">
+  <rect width="800" height="450" fill="#f0e2c8"/>
+  <rect y="340" width="800" height="110" fill="#b58a5a"/>
+  <path d="M0 340 h800" stroke="#96703f" stroke-width="4"/>
+  <rect x="270" y="52" width="260" height="46" rx="6" fill="#2f6f8f" stroke="#204e66" stroke-width="4"/>
+  <text x="400" y="84" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="bold" fill="#ffffff" text-anchor="middle" letter-spacing="3">BOOKS</text>
+  <g>
+    <rect x="50" y="110" width="260" height="230" fill="#8a5a34" stroke="#5a3f2c" stroke-width="4"/>
+    <g stroke="#5a3f2c" stroke-width="4"><path d="M50 168 h260 M50 226 h260 M50 284 h260"/></g>
+    <g>
+      <rect x="64" y="122" width="16" height="42" rx="2" fill="#e2574c"/><rect x="82" y="128" width="14" height="36" rx="2" fill="#3f8fd0"/>
+      <rect x="98" y="120" width="18" height="44" rx="2" fill="#f2a63c"/><rect x="118" y="130" width="14" height="34" rx="2" fill="#4f9c5c"/>
+      <rect x="134" y="124" width="16" height="40" rx="2" fill="#7a5aa8"/><rect x="152" y="132" width="14" height="32" rx="2" fill="#c4483f"/>
+      <rect x="168" y="120" width="18" height="44" rx="2" fill="#2f8f7a"/><rect x="188" y="130" width="14" height="34" rx="2" fill="#e8a33d"/>
+      <rect x="204" y="124" width="16" height="40" rx="2" fill="#3f8fd0"/><rect x="222" y="132" width="14" height="32" rx="2" fill="#e2574c"/>
+      <rect x="238" y="120" width="18" height="44" rx="2" fill="#4f9c5c"/><rect x="258" y="130" width="14" height="34" rx="2" fill="#f2a63c"/>
+      <rect x="64" y="180" width="16" height="42" rx="2" fill="#7a5aa8"/><rect x="82" y="186" width="14" height="36" rx="2" fill="#e2574c"/>
+      <rect x="98" y="178" width="18" height="44" rx="2" fill="#3f8fd0"/><rect x="118" y="188" width="14" height="34" rx="2" fill="#4f9c5c"/>
+      <rect x="134" y="182" width="16" height="40" rx="2" fill="#f2a63c"/><rect x="152" y="190" width="14" height="32" rx="2" fill="#2f8f7a"/>
+      <rect x="168" y="178" width="18" height="44" rx="2" fill="#c4483f"/><rect x="188" y="188" width="14" height="34" rx="2" fill="#3f8fd0"/>
+      <rect x="204" y="182" width="16" height="40" rx="2" fill="#4f9c5c"/><rect x="222" y="190" width="14" height="32" rx="2" fill="#7a5aa8"/>
+      <rect x="238" y="178" width="18" height="44" rx="2" fill="#e8a33d"/><rect x="258" y="188" width="14" height="34" rx="2" fill="#e2574c"/>
+      <rect x="64" y="238" width="16" height="42" rx="2" fill="#3f8fd0"/><rect x="82" y="244" width="14" height="36" rx="2" fill="#f2a63c"/>
+      <rect x="98" y="236" width="18" height="44" rx="2" fill="#4f9c5c"/><rect x="118" y="246" width="14" height="34" rx="2" fill="#7a5aa8"/>
+      <rect x="134" y="240" width="16" height="40" rx="2" fill="#e2574c"/><rect x="152" y="248" width="14" height="32" rx="2" fill="#2f8f7a"/>
+      <rect x="168" y="236" width="18" height="44" rx="2" fill="#3f8fd0"/><rect x="188" y="246" width="14" height="34" rx="2" fill="#e8a33d"/>
+      <rect x="204" y="240" width="16" height="40" rx="2" fill="#7a5aa8"/><rect x="222" y="248" width="14" height="32" rx="2" fill="#4f9c5c"/>
+      <rect x="238" y="236" width="18" height="44" rx="2" fill="#c4483f"/><rect x="258" y="246" width="14" height="34" rx="2" fill="#3f8fd0"/>
+    </g>
+  </g>
+  <g>
+    <rect x="520" y="150" width="230" height="190" fill="#8a5a34" stroke="#5a3f2c" stroke-width="4"/>
+    <g stroke="#5a3f2c" stroke-width="4"><path d="M520 214 h230 M520 278 h230"/></g>
+    <g>
+      <rect x="536" y="164" width="16" height="42" rx="2" fill="#e2574c"/><rect x="554" y="172" width="14" height="34" rx="2" fill="#3f8fd0"/>
+      <rect x="570" y="162" width="18" height="44" rx="2" fill="#f2a63c"/><rect x="590" y="172" width="14" height="34" rx="2" fill="#4f9c5c"/>
+      <rect x="606" y="166" width="16" height="40" rx="2" fill="#7a5aa8"/><rect x="624" y="174" width="14" height="32" rx="2" fill="#c4483f"/>
+      <rect x="640" y="162" width="18" height="44" rx="2" fill="#2f8f7a"/><rect x="660" y="172" width="14" height="34" rx="2" fill="#e8a33d"/>
+      <rect x="676" y="166" width="16" height="40" rx="2" fill="#3f8fd0"/><rect x="694" y="174" width="14" height="32" rx="2" fill="#e2574c"/>
+      <rect x="710" y="162" width="18" height="44" rx="2" fill="#4f9c5c"/><rect x="730" y="172" width="14" height="34" rx="2" fill="#f2a63c"/>
+      <rect x="536" y="228" width="16" height="42" rx="2" fill="#7a5aa8"/><rect x="554" y="236" width="14" height="34" rx="2" fill="#e2574c"/>
+      <rect x="570" y="226" width="18" height="44" rx="2" fill="#3f8fd0"/><rect x="590" y="236" width="14" height="34" rx="2" fill="#4f9c5c"/>
+      <rect x="606" y="230" width="16" height="40" rx="2" fill="#f2a63c"/><rect x="624" y="238" width="14" height="32" rx="2" fill="#2f8f7a"/>
+      <rect x="640" y="226" width="18" height="44" rx="2" fill="#c4483f"/><rect x="660" y="236" width="14" height="34" rx="2" fill="#3f8fd0"/>
+      <rect x="676" y="230" width="16" height="40" rx="2" fill="#4f9c5c"/><rect x="694" y="238" width="14" height="32" rx="2" fill="#7a5aa8"/>
+      <rect x="710" y="226" width="18" height="44" rx="2" fill="#e8a33d"/><rect x="730" y="236" width="14" height="34" rx="2" fill="#e2574c"/>
+    </g>
+  </g>
+  <g>
+    <path d="M340 300 q0 -40 40 -40 h60 q40 0 40 40 v40 h-140 z" fill="#c4483f" stroke="#8f2f28" stroke-width="4"/>
+    <path d="M350 300 q0 -28 30 -28 h60 q30 0 30 28 v20 h-120 z" fill="#f2e0c8" stroke="#8f2f28" stroke-width="3"/>
+    <rect x="330" y="340" width="160" height="16" rx="4" fill="#8f2f28"/>
+    <rect x="356" y="356" width="14" height="26" fill="#5a3f2c"/>
+    <rect x="450" y="356" width="14" height="26" fill="#5a3f2c"/>
+    <rect x="380" y="286" width="60" height="16" rx="4" fill="#ffffff" stroke="#33445c" stroke-width="3"/>
+    <path d="M410 286 v16" stroke="#33445c" stroke-width="3"/>
+    <path d="M380 294 h60" stroke="#33445c" stroke-width="3"/>
+  </g>
+  <g>
+    <rect x="200" y="360" width="90" height="18" rx="3" fill="#e2574c" stroke="#a53a32" stroke-width="3"/>
+    <rect x="206" y="342" width="80" height="18" rx="3" fill="#3f8fd0" stroke="#2c6699" stroke-width="3"/>
+    <rect x="212" y="324" width="70" height="18" rx="3" fill="#f2a63c" stroke="#c9811f" stroke-width="3"/>
+    <rect x="220" y="306" width="54" height="18" rx="3" fill="#4f9c5c" stroke="#35702f" stroke-width="3"/>
   </g>
 </svg>`
     }

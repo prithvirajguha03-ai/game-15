@@ -14,24 +14,11 @@
     'Notice the details that give it away.',
     'Think of the places you know well.'
   ];
-  const places = [
-    {id:1,name:'Market',image:'./assets/places/market.svg'},
-    {id:2,name:'School',image:'./assets/places/school.svg'},
-    {id:3,name:'Temple',image:'./assets/places/temple.svg'},
-    {id:4,name:'Park',image:'./assets/places/park.svg'},
-    {id:5,name:'Hospital',image:'./assets/places/hospital.svg'},
-    {id:6,name:'Home',image:'./assets/places/home.svg'},
-    {id:7,name:'Railway Station',image:'./assets/places/railway-station.svg'},
-    {id:8,name:'Shop',image:'./assets/places/shop.svg'},
-    {id:9,name:'Community Centre',image:'./assets/places/community-centre.svg'},
-    {id:10,name:'Beach',image:'./assets/places/beach.svg'},
-    {id:11,name:'Library',image:'./assets/places/library.svg'},
-    {id:12,name:'Restaurant',image:'./assets/places/restaurant.svg'},
-    {id:13,name:'Bus Stop',image:'./assets/places/bus-stop.svg'},
-    {id:14,name:'Street',image:'./assets/places/street.svg'},
-    {id:15,name:'Playground',image:'./assets/places/playground.svg'},
-    {id:16,name:'Garden',image:'./assets/places/garden.svg'}
-  ];
+  const PLACE_DATA = (typeof window !== 'undefined' && Array.isArray(window.PLACES)) ? window.PLACES : [];
+  const toSvgDataUri = function(svg){return 'data:image/svg+xml;charset=UTF-8,'+encodeURIComponent(svg);};
+  const places = PLACE_DATA.map(function(p){
+    return {id:p.id, name:p.name, cues:p.cues, svg:p.svg, image:toSvgDataUri(p.svg)};
+  });
   const OPTION_COUNT = 4;
   const $ = function(id){return document.getElementById(id);};
   const el = {

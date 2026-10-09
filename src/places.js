@@ -103,80 +103,6 @@
 </svg>`
     },
     {
-      id: "park",
-      name: "Park",
-      cues: ["trees", "pond", "bench", "swing set", "flower beds"],
-      svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A park with trees, a pond, a bench, a swing set, flower beds and a winding path">
-  <defs>
-    <linearGradient id="s4sky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#bfe6ff"/><stop offset="1" stop-color="#f0fbf3"/>
-    </linearGradient>
-  </defs>
-  <rect width="800" height="450" fill="url(#s4sky)"/>
-  <circle cx="680" cy="80" r="40" fill="#fff0a8"/>
-  <rect y="300" width="800" height="150" fill="#8fc978"/>
-  <ellipse cx="400" cy="404" rx="300" ry="34" fill="#83bf6d"/>
-  <path d="M180 450 C 260 380, 420 360, 620 330 L 700 330 C 520 386, 380 410, 300 450 Z" fill="#d9c9a4"/>
-
-  <g>
-    <ellipse cx="600" cy="392" rx="170" ry="42" fill="#6fb2d8"/>
-    <ellipse cx="600" cy="392" rx="170" ry="42" fill="none" stroke="#5a9cc4" stroke-width="5"/>
-    <path d="M560 388 h44 M600 400 h30" stroke="#cdeaf8" stroke-width="5" stroke-linecap="round"/>
-    <g fill="#7fb56a">
-      <ellipse cx="520" cy="378" rx="26" ry="9"/><ellipse cx="556" cy="408" rx="20" ry="7"/>
-    </g>
-  </g>
-
-  <g>
-    <rect x="120" y="250" width="26" height="90" fill="#7a5233"/>
-    <circle cx="133" cy="236" r="56" fill="#5da35c"/>
-    <circle cx="98" cy="256" r="34" fill="#6cb86a"/>
-    <circle cx="168" cy="256" r="32" fill="#6cb86a"/>
-  </g>
-  <g>
-    <rect x="290" y="264" width="22" height="76" fill="#7a5233"/>
-    <circle cx="301" cy="252" r="44" fill="#5da35c"/>
-    <circle cx="272" cy="268" r="26" fill="#6cb86a"/>
-    <circle cx="330" cy="268" r="26" fill="#6cb86a"/>
-  </g>
-  <g>
-    <rect x="710" y="268" width="20" height="72" fill="#7a5233"/>
-    <circle cx="720" cy="256" r="40" fill="#5da35c"/>
-    <circle cx="692" cy="272" r="24" fill="#6cb86a"/>
-  </g>
-
-  <g>
-    <path d="M348 244 L318 356 M402 244 L432 356" stroke="#6a8fb5" stroke-width="10" stroke-linecap="round"/>
-    <path d="M330 244 L420 244" stroke="#6a8fb5" stroke-width="10" stroke-linecap="round"/>
-    <path d="M356 250 v54 M392 250 v54" stroke="#5b7fa5" stroke-width="4"/>
-    <rect x="346" y="304" width="20" height="10" rx="4" fill="#e2b23c"/>
-    <rect x="382" y="304" width="20" height="10" rx="4" fill="#e2b23c"/>
-  </g>
-
-  <g fill="#8a5a34">
-    <rect x="420" y="316" width="110" height="12" rx="6"/>
-    <rect x="420" y="336" width="110" height="12" rx="6"/>
-    <rect x="424" y="326" width="10" height="28"/><rect x="516" y="326" width="10" height="28"/>
-    <rect x="410" y="300" width="12" height="52" rx="6"/>
-  </g>
-  <g fill="#e8a33d">
-    <circle cx="418" cy="292" r="10"/><circle cx="434" cy="292" r="10"/>
-  </g>
-
-  <g>
-    <ellipse cx="96" cy="392" rx="66" ry="18" fill="#a97c50" stroke="#7a5233" stroke-width="3"/>
-    <g><circle cx="66" cy="388" r="7" fill="#e2574c"/><circle cx="92" cy="384" r="7" fill="#f2b134"/><circle cx="118" cy="388" r="7" fill="#e2574c"/><circle cx="104" cy="396" r="6" fill="#c4483f"/></g>
-    <ellipse cx="250" cy="430" rx="72" ry="16" fill="#a97c50" stroke="#7a5233" stroke-width="3"/>
-    <g><circle cx="222" cy="426" r="7" fill="#f2b134"/><circle cx="250" cy="422" r="7" fill="#e2574c"/><circle cx="278" cy="426" r="7" fill="#7a5aa8"/></g>
-  </g>
-
-  <g fill="#3f5c6b">
-    <path d="M440 150 q10 -12 20 0 q-10 8 -20 0" fill="#4d6a78"/>
-    <path d="M490 122 q9 -11 18 0 q-9 7 -18 0" fill="#4d6a78"/>
-  </g>
-</svg>`
-    },
-    {
       id: "hospital",
       name: "Hospital",
       cues: ["red cross", "H sign", "doctor", "ambulance"],
@@ -858,74 +784,6 @@
     <circle cx="710" cy="170" r="8" fill="#d9534f"/>
     <circle cx="710" cy="188" r="8" fill="#e2b23c"/>
     <circle cx="710" cy="206" r="8" fill="#4f9c5c"/>
-  </g>
-</svg>`
-    },
-    {
-      id: "playground",
-      name: "Playground",
-      cues: ["slide", "swings", "roundabout", "children"],
-      svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A playground with a slide, swings, a roundabout and a climbing frame on grass">
-  <defs>
-    <linearGradient id="s15sky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#a8dcf5"/><stop offset="1" stop-color="#eafaf2"/>
-    </linearGradient>
-  </defs>
-  <rect width="800" height="450" fill="url(#s15sky)"/>
-  <circle cx="640" cy="80" r="40" fill="#ffe9a8"/>
-  <rect y="300" width="800" height="150" fill="#8fc978"/>
-  <path d="M0 300 h800" stroke="#77b862" stroke-width="4"/>
-
-  <g>
-    <path d="M180 140 L180 320 M232 140 L232 320" stroke="#4a7ba8" stroke-width="14" stroke-linecap="round"/>
-    <path d="M180 140 L232 140" stroke="#4a7ba8" stroke-width="14" stroke-linecap="round"/>
-    <path d="M206 140 v180 h74 v22" fill="none" stroke="#e2574c" stroke-width="16" stroke-linecap="round"/>
-    <rect x="280" y="180" width="150" height="26" rx="13" fill="#e2b23c"/>
-    <rect x="404" y="180" width="34" height="150" rx="14" fill="#3f8fd0"/>
-    <g fill="#e2574c"><circle cx="206" cy="230" r="16"/><rect x="192" y="246" width="30" height="46" rx="12"/></g>
-  </g>
-
-  <g>
-    <path d="M520 320 L580 140 M640 320 L600 140" stroke="#6a8fb5" stroke-width="14" stroke-linecap="round"/>
-    <path d="M580 140 L600 140" stroke="#6a8fb5" stroke-width="14" stroke-linecap="round"/>
-    <path d="M540 160 h100" stroke="#5b7fa5" stroke-width="10" stroke-linecap="round"/>
-    <path d="M556 160 v50" stroke="#5b7fa5" stroke-width="6"/>
-    <path d="M584 160 v50" stroke="#5b7fa5" stroke-width="6"/>
-    <rect x="546" y="210" width="26" height="12" rx="4" fill="#e2b23c"/>
-    <rect x="574" y="210" width="26" height="12" rx="4" fill="#e2b23c"/>
-  </g>
-
-  <g>
-    <ellipse cx="400" cy="404" rx="70" ry="20" fill="#b8c4cc"/>
-    <rect x="394" y="330" width="12" height="60" fill="#8fa2ad"/>
-    <rect x="360" y="330" width="80" height="14" rx="7" fill="#4a9c8f"/>
-    <circle cx="400" cy="316" r="12" fill="#e2574c"/>
-  </g>
-
-  <g stroke="#d9a441" stroke-width="10" fill="none">
-    <rect x="60" y="180" width="80" height="140" rx="8"/>
-    <path d="M60 210 h80 M60 240 h80 M60 270 h80 M60 300 h80"/>
-    <path d="M88 180 v140 M112 180 v140"/>
-  </g>
-
-  <g>
-    <circle cx="712" cy="368" r="26" fill="#6cb86a"/><rect x="706" y="388" width="12" height="32" fill="#7a5233"/>
-  </g>
-  <g>
-    <circle cx="250" cy="352" r="12" fill="#f0c9a0" stroke="#6f4d33" stroke-width="2"/>
-    <path d="M238 346 q12 -10 24 0 z" fill="#4a3626"/>
-    <rect x="239" y="362" width="22" height="28" rx="7" fill="#e2b23c" stroke="#b5871f" stroke-width="2"/>
-    <rect x="228" y="364" width="11" height="20" rx="5" fill="#e2b23c"/>
-    <rect x="261" y="364" width="11" height="20" rx="5" fill="#e2b23c"/>
-    <rect x="243" y="390" width="6" height="14" fill="#3a4247"/>
-    <rect x="253" y="390" width="6" height="14" fill="#3a4247"/>
-  </g>
-  <g>
-    <circle cx="470" cy="356" r="11" fill="#f0c9a0" stroke="#6f4d33" stroke-width="2"/>
-    <path d="M459 350 q11 -10 22 0 z" fill="#4a3626"/>
-    <rect x="460" y="365" width="20" height="26" rx="6" fill="#4f9c5c" stroke="#35702f" stroke-width="2"/>
-    <rect x="464" y="391" width="6" height="12" fill="#3a4247"/>
-    <rect x="474" y="391" width="6" height="12" fill="#3a4247"/>
   </g>
 </svg>`
     },
@@ -2153,6 +2011,356 @@
   <rect x="310" y="16" width="180" height="78" rx="8" fill="#1c2440" stroke="#000000" stroke-width="4"/>
   <text x="400" y="56" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="bold" fill="#f2c94c" text-anchor="middle">120/3</text>
   <text x="400" y="82" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="bold" fill="#ffffff" text-anchor="middle" letter-spacing="1">OVERS 18.2</text>
+</svg>`
+    },
+    {
+      id: "park",
+      name: "Park",
+      cues: ["2-3 trees with green canopies", "wooden bench", "small fountain in center"],
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A calm park with green trees, a wooden bench and a small fountain in the centre">
+  <rect width="800" height="450" fill="#cfe8f5"/>
+  <rect y="330" width="800" height="120" fill="#7cc36a"/>
+  <rect y="330" width="800" height="10" fill="#5aa64c"/>
+  <rect x="160" y="248" width="26" height="94" fill="#8a5a2f" stroke="#5a3f1f" stroke-width="4"/>
+  <circle cx="150" cy="238" r="48" fill="#3f9c4c" stroke="#2a6f34" stroke-width="5"/>
+  <circle cx="208" cy="226" r="42" fill="#4aab58" stroke="#2a6f34" stroke-width="5"/>
+  <circle cx="172" cy="188" r="46" fill="#46a352" stroke="#2a6f34" stroke-width="5"/>
+  <rect x="636" y="266" width="24" height="80" fill="#8a5a2f" stroke="#5a3f1f" stroke-width="4"/>
+  <circle cx="628" cy="256" r="40" fill="#3f9c4c" stroke="#2a6f34" stroke-width="5"/>
+  <circle cx="678" cy="244" r="38" fill="#4aab58" stroke="#2a6f34" stroke-width="5"/>
+  <circle cx="652" cy="212" r="40" fill="#46a352" stroke="#2a6f34" stroke-width="5"/>
+  <ellipse cx="400" cy="372" rx="98" ry="26" fill="#9fd8ea" stroke="#4a90b0" stroke-width="5"/>
+  <ellipse cx="400" cy="368" rx="78" ry="18" fill="#5fb8dd" stroke="#3a7fa0" stroke-width="4"/>
+  <rect x="388" y="300" width="24" height="72" fill="#b8b0a0" stroke="#7a7264" stroke-width="4"/>
+  <ellipse cx="400" cy="298" rx="46" ry="14" fill="#cfc7b8" stroke="#7a7264" stroke-width="4"/>
+  <ellipse cx="400" cy="294" rx="34" ry="9" fill="#5fb8dd" stroke="#3a7fa0" stroke-width="3"/>
+  <path d="M382 292 q-26 -22 -40 -54 M418 292 q26 -22 40 -54 M400 288 v-46" fill="none" stroke="#7fd3ee" stroke-width="6"/>
+  <circle cx="342" cy="234" r="7" fill="#9fe4f7"/><circle cx="458" cy="234" r="7" fill="#9fe4f7"/>
+  <rect x="90" y="392" width="134" height="14" rx="3" fill="#b5793f" stroke="#7a4a1f" stroke-width="4"/>
+  <rect x="98" y="360" width="118" height="14" rx="3" fill="#b5793f" stroke="#7a4a1f" stroke-width="4"/>
+  <rect x="98" y="346" width="14" height="60" fill="#8a5a2f" stroke="#5a3f1f" stroke-width="3"/>
+  <rect x="202" y="346" width="14" height="60" fill="#8a5a2f" stroke="#5a3f1f" stroke-width="3"/>
+  <rect x="102" y="406" width="12" height="28" fill="#6b4a2f"/><rect x="200" y="406" width="12" height="28" fill="#6b4a2f"/>
+</svg>`
+    },
+    {
+      id: "playground",
+      name: "Playground",
+      cues: ["swing set with chains", "slide (blue/red)", "2 children playing"],
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="An active playground with a swing set, a blue and red slide and two children playing">
+  <rect width="800" height="450" fill="#cfe8f5"/>
+  <rect y="330" width="800" height="120" fill="#f0d98a"/>
+  <rect y="330" width="800" height="10" fill="#d8bd63"/>
+  <rect x="96" y="150" width="264" height="16" rx="4" fill="#e2574c" stroke="#a53a32" stroke-width="4"/>
+  <path d="M108 166 L64 360 M108 166 L152 360 M348 166 L304 360 M348 166 L392 360" fill="none" stroke="#3f8fd0" stroke-width="9"/>
+  <path d="M158 166 v96 M290 166 v96" stroke="#6b4a2f" stroke-width="5"/>
+  <rect x="138" y="262" width="44" height="12" rx="3" fill="#4f9c5c" stroke="#35702f" stroke-width="4"/>
+  <rect x="270" y="262" width="44" height="12" rx="3" fill="#4f9c5c" stroke="#35702f" stroke-width="4"/>
+  <circle cx="160" cy="232" r="14" fill="#e8b98a" stroke="#b07a4a" stroke-width="4"/>
+  <rect x="148" y="246" width="26" height="26" rx="6" fill="#e2574c" stroke="#a53a32" stroke-width="3"/>
+  <path d="M160 272 v18" stroke="#2f6f8f" stroke-width="6"/>
+  <path d="M470 360 v-180" stroke="#3f8fd0" stroke-width="9"/>
+  <path d="M520 360 v-180" stroke="#3f8fd0" stroke-width="9"/>
+  <path d="M470 220 h50 M470 250 h50 M470 280 h50 M470 310 h50 M470 340 h50" stroke="#3f8fd0" stroke-width="7"/>
+  <rect x="450" y="148" width="90" height="20" rx="4" fill="#e2574c" stroke="#a53a32" stroke-width="4"/>
+  <path d="M520 168 Q620 200 640 330 L560 340 Q540 240 500 180 Z" fill="#3f8fd0" stroke="#2c6699" stroke-width="4"/>
+  <path d="M640 330 L560 340" stroke="#e2574c" stroke-width="6"/>
+  <circle cx="610" cy="300" r="26" fill="#3f8fd0" stroke="#2c6699" stroke-width="4"/>
+  <circle cx="612" cy="246" r="16" fill="#e8b98a" stroke="#b07a4a" stroke-width="4"/>
+  <rect x="598" y="262" width="30" height="34" rx="6" fill="#f2a63c" stroke="#c9811f" stroke-width="3"/>
+  <path d="M600 264 L580 236 M626 264 L648 232" stroke="#e8b98a" stroke-width="7"/>
+  <path d="M606 296 L594 330 M620 296 L632 330" stroke="#2f6f8f" stroke-width="7"/>
+</svg>`
+    },
+    {
+      id: "farm",
+      name: "Farm",
+      cues: ["tractor (red/green) in field", "rows of crops", "scarecrow with hat"],
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A farm with a red tractor, neat rows of crops and a scarecrow wearing a hat">
+  <rect width="800" height="450" fill="#bfe3f5"/>
+  <rect y="250" width="800" height="200" fill="#cba85a"/>
+  <rect y="250" width="800" height="10" fill="#b08f40"/>
+  <g stroke="#3f8f3f" stroke-width="6" fill="none">
+    <path d="M40 300 Q400 286 760 300"/>
+    <path d="M40 350 Q400 336 760 350"/>
+    <path d="M40 400 Q400 386 760 400"/>
+  </g>
+  <g fill="#4f9c5c" stroke="#35702f" stroke-width="3">
+    <path d="M70 300 q6 -18 12 0 q6 -18 12 0 l-6 14 h-12 Z"/><path d="M180 296 q6 -18 12 0 q6 -18 12 0 l-6 14 h-12 Z"/><path d="M290 293 q6 -18 12 0 q6 -18 12 0 l-6 14 h-12 Z"/>
+    <path d="M400 292 q6 -18 12 0 q6 -18 12 0 l-6 14 h-12 Z"/><path d="M510 292 q6 -18 12 0 q6 -18 12 0 l-6 14 h-12 Z"/><path d="M670 296 q6 -18 12 0 q6 -18 12 0 l-6 14 h-12 Z"/>
+    <path d="M110 350 q6 -18 12 0 q6 -18 12 0 l-6 14 h-12 Z"/><path d="M220 347 q6 -18 12 0 q6 -18 12 0 l-6 14 h-12 Z"/><path d="M330 345 q6 -18 12 0 q6 -18 12 0 l-6 14 h-12 Z"/>
+    <path d="M440 344 q6 -18 12 0 q6 -18 12 0 l-6 14 h-12 Z"/><path d="M550 345 q6 -18 12 0 q6 -18 12 0 l-6 14 h-12 Z"/><path d="M660 347 q6 -18 12 0 q6 -18 12 0 l-6 14 h-12 Z"/>
+    <path d="M70 400 q6 -18 12 0 q6 -18 12 0 l-6 14 h-12 Z"/><path d="M180 398 q6 -18 12 0 q6 -18 12 0 l-6 14 h-12 Z"/><path d="M290 396 q6 -18 12 0 q6 -18 12 0 l-6 14 h-12 Z"/>
+    <path d="M400 396 q6 -18 12 0 q6 -18 12 0 l-6 14 h-12 Z"/><path d="M510 397 q6 -18 12 0 q6 -18 12 0 l-6 14 h-12 Z"/><path d="M620 398 q6 -18 12 0 q6 -18 12 0 l-6 14 h-12 Z"/>
+  </g>
+  <rect x="118" y="322" width="150" height="52" rx="10" fill="#e2574c" stroke="#a53a32" stroke-width="5"/>
+  <rect x="188" y="262" width="76" height="66" rx="8" fill="#e2574c" stroke="#a53a32" stroke-width="5"/>
+  <rect x="198" y="272" width="56" height="40" fill="#bfe3f5" stroke="#a53a32" stroke-width="3"/>
+  <rect x="258" y="236" width="12" height="32" fill="#6a6a72" stroke="#3a3a42" stroke-width="3"/>
+  <circle cx="264" cy="238" r="6" fill="#9a9aa2"/>
+  <circle cx="170" cy="378" r="52" fill="#3a3a42" stroke="#1a1a1a" stroke-width="5"/>
+  <circle cx="170" cy="378" r="18" fill="#9a9aa2" stroke="#1a1a1a" stroke-width="4"/>
+  <circle cx="120" cy="390" r="28" fill="#3a3a42" stroke="#1a1a1a" stroke-width="5"/>
+  <circle cx="120" cy="390" r="10" fill="#9a9aa2" stroke="#1a1a1a" stroke-width="3"/>
+  <path d="M118 322 q52 -22 104 0" fill="none" stroke="#8a2f28" stroke-width="5"/>
+  <rect x="640" y="196" width="14" height="184" fill="#8a5a2f" stroke="#5a3f1f" stroke-width="4"/>
+  <rect x="584" y="238" width="126" height="12" rx="3" fill="#8a5a2f" stroke="#5a3f1f" stroke-width="4"/>
+  <path d="M604 250 q20 40 0 78 q-20 -38 0 -78 Z" fill="#c4483f" stroke="#8f2f28" stroke-width="4"/>
+  <path d="M690 250 q-20 40 0 78 q20 -38 0 -78 Z" fill="#c4483f" stroke="#8f2f28" stroke-width="4"/>
+  <circle cx="647" cy="200" r="20" fill="#e8c07a" stroke="#b8860b" stroke-width="4"/>
+  <circle cx="640" cy="196" r="3" fill="#3a3a42"/><circle cx="654" cy="196" r="3" fill="#3a3a42"/>
+  <path d="M637 206 q10 8 20 0" fill="none" stroke="#3a3a42" stroke-width="3"/>
+  <path d="M607 186 L687 186 L647 150 Z" fill="#e0a72e" stroke="#a9770b" stroke-width="4"/>
+  <rect x="598" y="182" width="98" height="10" rx="5" fill="#e0a72e" stroke="#a9770b" stroke-width="4"/>
+</svg>`
+    },
+    {
+      id: "rice-field",
+      name: "Rice Field",
+      cues: ["green paddy plants in water", "farmer with bent back planting", "muddy field"],
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A flooded muddy rice field with green paddy plants and a farmer with a bent back planting">
+  <rect width="800" height="450" fill="#bfe3f5"/>
+  <rect y="170" width="800" height="280" fill="#8a9a52"/>
+  <rect y="170" width="800" height="10" fill="#6f7f3f"/>
+  <path d="M0 230 Q400 210 800 230" fill="none" stroke="#6f5a2f" stroke-width="10"/>
+  <path d="M0 300 Q400 282 800 300" fill="none" stroke="#6f5a2f" stroke-width="10"/>
+  <path d="M0 372 Q400 356 800 372" fill="none" stroke="#6f5a2f" stroke-width="10"/>
+  <g stroke="#5f7fbf" stroke-width="4" fill="none" opacity="0.6">
+    <path d="M60 250 h60 M200 246 h60 M360 244 h60 M520 246 h60 M680 250 h40"/>
+    <path d="M40 322 h50 M180 318 h50 M340 316 h50 M500 318 h50 M660 322 h50"/>
+  </g>
+  <g fill="#4fae3f" stroke="#2f7f2f" stroke-width="3">
+    <path d="M70 224 q0 -6 4 -8 q1 -12 5 -14 q4 2 5 14 q4 2 4 8 Z"/>
+    <path d="M140 222 q0 -6 4 -8 q1 -12 5 -14 q4 2 5 14 q4 2 4 8 Z"/>
+    <path d="M210 220 q0 -6 4 -8 q1 -12 5 -14 q4 2 5 14 q4 2 4 8 Z"/>
+    <path d="M280 220 q0 -6 4 -8 q1 -12 5 -14 q4 2 5 14 q4 2 4 8 Z"/>
+    <path d="M440 220 q0 -6 4 -8 q1 -12 5 -14 q4 2 5 14 q4 2 4 8 Z"/>
+    <path d="M510 221 q0 -6 4 -8 q1 -12 5 -14 q4 2 5 14 q4 2 4 8 Z"/>
+    <path d="M580 222 q0 -6 4 -8 q1 -12 5 -14 q4 2 5 14 q4 2 4 8 Z"/>
+    <path d="M650 224 q0 -6 4 -8 q1 -12 5 -14 q4 2 5 14 q4 2 4 8 Z"/>
+    <path d="M100 292 q0 -6 4 -8 q1 -12 5 -14 q4 2 5 14 q4 2 4 8 Z"/>
+    <path d="M170 290 q0 -6 4 -8 q1 -12 5 -14 q4 2 5 14 q4 2 4 8 Z"/>
+    <path d="M240 289 q0 -6 4 -8 q1 -12 5 -14 q4 2 5 14 q4 2 4 8 Z"/>
+    <path d="M310 288 q0 -6 4 -8 q1 -12 5 -14 q4 2 5 14 q4 2 4 8 Z"/>
+    <path d="M470 288 q0 -6 4 -8 q1 -12 5 -14 q4 2 5 14 q4 2 4 8 Z"/>
+    <path d="M540 289 q0 -6 4 -8 q1 -12 5 -14 q4 2 5 14 q4 2 4 8 Z"/>
+    <path d="M610 290 q0 -6 4 -8 q1 -12 5 -14 q4 2 5 14 q4 2 4 8 Z"/>
+    <path d="M680 292 q0 -6 4 -8 q1 -12 5 -14 q4 2 5 14 q4 2 4 8 Z"/>
+    <path d="M80 364 q0 -6 4 -8 q1 -12 5 -14 q4 2 5 14 q4 2 4 8 Z"/>
+    <path d="M160 362 q0 -6 4 -8 q1 -12 5 -14 q4 2 5 14 q4 2 4 8 Z"/>
+    <path d="M620 363 q0 -6 4 -8 q1 -12 5 -14 q4 2 5 14 q4 2 4 8 Z"/>
+    <path d="M700 364 q0 -6 4 -8 q1 -12 5 -14 q4 2 5 14 q4 2 4 8 Z"/>
+  </g>
+  <g>
+    <ellipse cx="210" cy="360" rx="70" ry="14" fill="#6f5a2f" opacity="0.6"/>
+    <path d="M150 320 Q175 288 214 306 Q250 322 246 356 L214 356 Q220 330 200 320 Q178 312 168 344 Z" fill="#3f8f8f" stroke="#2a6a6a" stroke-width="4"/>
+    <circle cx="152" cy="318" r="17" fill="#e8b98a" stroke="#b07a4a" stroke-width="4"/>
+    <path d="M126 316 L178 316 L152 284 Z" fill="#e0a72e" stroke="#a9770b" stroke-width="4"/>
+    <path d="M168 348 q34 -6 54 20" fill="none" stroke="#e8b98a" stroke-width="8"/>
+    <path d="M150 320 q-14 12 -22 30" fill="none" stroke="#3f8f8f" stroke-width="10"/>
+  </g>
+</svg>`
+    },
+    {
+      id: "tea-garden",
+      name: "Tea Garden",
+      cues: ["rows of rounded tea bushes on slope", "plucker with basket on back", "tea leaves in basket"],
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A tea garden with neat rows of rounded tea bushes on a green slope and a plucker carrying a basket of tea leaves">
+  <rect width="800" height="450" fill="#cfe8f5"/>
+  <rect y="150" width="800" height="14" fill="#5aa64c"/>
+  <path d="M0 164 L800 300 L800 450 L0 450 Z" fill="#7cbf58"/>
+  <path d="M0 164 L800 300" fill="none" stroke="#4f9c3f" stroke-width="6"/>
+  <g stroke="#4f9c3f" stroke-width="5" fill="none">
+    <path d="M0 224 Q400 214 800 350"/>
+    <path d="M0 284 Q400 274 800 408"/>
+  </g>
+  <g fill="#2f8f3f" stroke="#1f6a2f" stroke-width="4">
+    <ellipse cx="50" cy="196" rx="28" ry="16"/><ellipse cx="150" cy="200" rx="28" ry="16"/><ellipse cx="250" cy="204" rx="28" ry="16"/><ellipse cx="350" cy="208" rx="28" ry="16"/><ellipse cx="450" cy="212" rx="28" ry="16"/><ellipse cx="550" cy="216" rx="28" ry="16"/><ellipse cx="650" cy="220" rx="28" ry="16"/><ellipse cx="750" cy="224" rx="28" ry="16"/>
+    <ellipse cx="30" cy="258" rx="28" ry="16"/><ellipse cx="130" cy="262" rx="28" ry="16"/><ellipse cx="230" cy="266" rx="28" ry="16"/><ellipse cx="330" cy="270" rx="28" ry="16"/><ellipse cx="430" cy="274" rx="28" ry="16"/><ellipse cx="530" cy="278" rx="28" ry="16"/><ellipse cx="630" cy="282" rx="28" ry="16"/><ellipse cx="730" cy="286" rx="28" ry="16"/>
+    <ellipse cx="50" cy="320" rx="30" ry="17"/><ellipse cx="160" cy="326" rx="30" ry="17"/><ellipse cx="270" cy="332" rx="30" ry="17"/><ellipse cx="380" cy="338" rx="30" ry="17"/><ellipse cx="490" cy="344" rx="30" ry="17"/><ellipse cx="600" cy="350" rx="30" ry="17"/><ellipse cx="710" cy="356" rx="30" ry="17"/>
+    <ellipse cx="60" cy="386" rx="32" ry="18"/><ellipse cx="180" cy="394" rx="32" ry="18"/><ellipse cx="300" cy="402" rx="32" ry="18"/><ellipse cx="420" cy="410" rx="32" ry="18"/><ellipse cx="540" cy="418" rx="32" ry="18"/><ellipse cx="660" cy="426" rx="32" ry="18"/>
+  </g>
+  <g>
+    <circle cx="600" cy="300" r="18" fill="#e8b98a" stroke="#b07a4a" stroke-width="4"/>
+    <path d="M578 322 Q600 310 622 322 L628 386 L570 386 Z" fill="#3f8f8f" stroke="#2a6a6a" stroke-width="4"/>
+    <path d="M560 322 L536 358 M640 322 L664 358" stroke="#e8b98a" stroke-width="8"/>
+    <rect x="620" y="314" width="46" height="54" rx="8" fill="#c98a3a" stroke="#8a5a1f" stroke-width="4"/>
+    <path d="M622 330 h42 M622 346 h42" stroke="#8a5a1f" stroke-width="3"/>
+    <g fill="#4fae3f" stroke="#2f7f2f" stroke-width="3">
+      <ellipse cx="634" cy="314" rx="10" ry="7"/><ellipse cx="648" cy="310" rx="10" ry="7"/><ellipse cx="660" cy="316" rx="10" ry="7"/>
+    </g>
+  </g>
+</svg>`
+    },
+    {
+      id: "river-ghat",
+      name: "River Ghat",
+      cues: ["stone steps leading down to water", "small wooden boat", "diya floating on water"],
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A river ghat with stone steps leading down to the water, a small wooden boat and a diya floating on the water">
+  <rect width="800" height="450" fill="#bfe3f5"/>
+  <rect y="70" width="800" height="160" fill="#c9b478"/>
+  <rect y="70" width="800" height="12" fill="#b09a5a"/>
+  <rect x="180" y="86" width="120" height="120" rx="8" fill="#efe4cf" stroke="#b0a184" stroke-width="5"/>
+  <rect x="180" y="86" width="120" height="34" rx="8" fill="#a34a3a" stroke="#6f2f24" stroke-width="4"/>
+  <rect x="220" y="140" width="40" height="66" rx="6" fill="#8a5a2f" stroke="#5a3f1f" stroke-width="4"/>
+  <rect x="500" y="86" width="120" height="120" rx="8" fill="#efe4cf" stroke="#b0a184" stroke-width="5"/>
+  <rect x="500" y="86" width="120" height="34" rx="8" fill="#a34a3a" stroke="#6f2f24" stroke-width="4"/>
+  <rect x="540" y="140" width="40" height="66" rx="6" fill="#8a5a2f" stroke="#5a3f1f" stroke-width="4"/>
+  <rect x="330" y="150" width="140" height="16" fill="#d9c6a0" stroke="#b0a184" stroke-width="4"/>
+  <rect x="320" y="170" width="160" height="16" fill="#cdb88f" stroke="#b0a184" stroke-width="4"/>
+  <rect x="310" y="190" width="180" height="16" fill="#c2ab80" stroke="#b0a184" stroke-width="4"/>
+  <rect x="300" y="210" width="200" height="16" fill="#b8a072" stroke="#b0a184" stroke-width="4"/>
+  <rect x="290" y="230" width="220" height="16" fill="#ad9564" stroke="#b0a184" stroke-width="4"/>
+  <rect y="246" width="800" height="204" fill="#5fb8dd"/>
+  <rect y="246" width="800" height="10" fill="#3a8fc0"/>
+  <g stroke="#9fd8ea" stroke-width="5" fill="none">
+    <path d="M60 300 q40 -10 80 0 q40 10 80 0"/>
+    <path d="M420 330 q40 -10 80 0 q40 10 80 0"/>
+    <path d="M160 400 q40 -10 80 0 q40 10 80 0"/>
+    <path d="M560 390 q40 -10 80 0 q40 10 80 0"/>
+  </g>
+  <g>
+    <path d="M470 372 Q560 356 650 372 L622 404 Q560 392 498 404 Z" fill="#a9773f" stroke="#6f4a1f" stroke-width="5"/>
+    <path d="M492 378 L620 378" stroke="#6f4a1f" stroke-width="4"/>
+    <rect x="588" y="336" width="8" height="42" fill="#8a5a2f" stroke="#5a3f1f" stroke-width="3"/>
+    <path d="M598 338 L632 354 L596 366 Z" fill="#f2e0c8" stroke="#8a5a2f" stroke-width="3"/>
+  </g>
+  <g>
+    <ellipse cx="250" cy="392" rx="26" ry="10" fill="#b5651d" stroke="#7a4010" stroke-width="3"/>
+    <path d="M250 384 q7 -14 0 -24 q-7 10 0 24 Z" fill="#ffb703" stroke="#e07a00" stroke-width="2"/>
+    <circle cx="250" cy="375" r="5" fill="#fff3b0"/>
+    <circle cx="250" cy="392" r="34" fill="none" stroke="#f2c94c" stroke-width="3" opacity="0.7"/>
+  </g>
+</svg>`
+    },
+    {
+      id: "pond",
+      name: "Pond",
+      cues: ["still water with lotus flowers", "ducks swimming", "green banks"],
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A pond of still water with pink lotus flowers, ducks swimming and green banks">
+  <rect width="800" height="450" fill="#cfe8f5"/>
+  <rect y="90" width="800" height="360" fill="#7cc36a"/>
+  <ellipse cx="400" cy="290" rx="300" ry="130" fill="#8fd0e8" stroke="#4a90b0" stroke-width="6"/>
+  <ellipse cx="400" cy="290" rx="300" ry="130" fill="none" stroke="#c9b478" stroke-width="14"/>
+  <g stroke="#bfe3f5" stroke-width="5" fill="none">
+    <path d="M180 260 q60 -14 120 0"/>
+    <path d="M440 330 q60 -14 120 0"/>
+    <path d="M300 240 q50 -12 100 0"/>
+  </g>
+  <g>
+    <ellipse cx="250" cy="300" rx="30" ry="14" fill="#3f9c4c" stroke="#2a6f34" stroke-width="3"/>
+    <ellipse cx="330" cy="250" rx="28" ry="13" fill="#3f9c4c" stroke="#2a6f34" stroke-width="3"/>
+    <ellipse cx="500" cy="320" rx="30" ry="14" fill="#3f9c4c" stroke="#2a6f34" stroke-width="3"/>
+    <ellipse cx="560" cy="260" rx="26" ry="12" fill="#3f9c4c" stroke="#2a6f34" stroke-width="3"/>
+  </g>
+  <g>
+    <path d="M250 286 q-18 -26 0 -44 q18 18 0 44" fill="#f2a0c0" stroke="#c9679a" stroke-width="3"/>
+    <path d="M250 286 q-34 -14 -30 -40 q28 6 30 40" fill="#f7b8d0" stroke="#c9679a" stroke-width="3"/>
+    <path d="M250 286 q34 -14 30 -40 q-28 6 -30 40" fill="#f7b8d0" stroke="#c9679a" stroke-width="3"/>
+    <circle cx="250" cy="286" r="7" fill="#f2c94c" stroke="#b8860b" stroke-width="3"/>
+    <path d="M500 306 q-16 -24 0 -40 q16 16 0 40" fill="#f2a0c0" stroke="#c9679a" stroke-width="3"/>
+    <path d="M500 306 q-30 -12 -26 -36 q24 6 26 36" fill="#f7b8d0" stroke="#c9679a" stroke-width="3"/>
+    <path d="M500 306 q30 -12 26 -36 q-24 6 -26 36" fill="#f7b8d0" stroke="#c9679a" stroke-width="3"/>
+    <circle cx="500" cy="306" r="7" fill="#f2c94c" stroke="#b8860b" stroke-width="3"/>
+  </g>
+  <g fill="#f2c94c" stroke="#c9811f" stroke-width="3">
+    <ellipse cx="360" cy="340" rx="34" ry="22"/>
+    <circle cx="330" cy="316" r="14"/>
+    <path d="M322 310 L306 300 L318 324 Z"/>
+    <ellipse cx="620" cy="290" rx="30" ry="20"/>
+    <circle cx="594" cy="270" r="12"/>
+    <path d="M588 264 L574 256 L584 276 Z"/>
+  </g>
+  <g fill="#e2574c" stroke="#a53a32" stroke-width="3">
+    <circle cx="330" cy="312" r="3"/><circle cx="596" cy="268" r="3"/>
+  </g>
+</svg>`
+    },
+    {
+      id: "hill",
+      name: "Hill",
+      cues: ["pointed mountain peaks", "white clouds around top", "pine trees at base"],
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="Pointed green hills with white clouds around the peaks and pine trees at the base">
+  <rect width="800" height="450" fill="#bfe3f5"/>
+  <path d="M110 380 L330 120 L550 380 Z" fill="#8a9ab0" stroke="#5a6a80" stroke-width="6"/>
+  <path d="M330 120 L380 186 L354 172 L330 196 L306 172 L280 186 Z" fill="#ffffff" stroke="#cfd8e6" stroke-width="4"/>
+  <path d="M400 380 L620 160 L800 380 Z" fill="#9aa8bc" stroke="#5a6a80" stroke-width="6"/>
+  <path d="M620 160 L662 216 L640 204 L620 226 L600 204 L578 216 Z" fill="#ffffff" stroke="#cfd8e6" stroke-width="4"/>
+  <g fill="#ffffff" stroke="#d6e8f2" stroke-width="4">
+    <ellipse cx="330" cy="150" rx="54" ry="24"/>
+    <ellipse cx="270" cy="176" rx="40" ry="18"/>
+    <ellipse cx="392" cy="170" rx="42" ry="18"/>
+    <ellipse cx="620" cy="196" rx="50" ry="22"/>
+    <ellipse cx="684" cy="214" rx="36" ry="16"/>
+    <ellipse cx="560" cy="206" rx="36" ry="16"/>
+  </g>
+  <rect y="380" width="800" height="70" fill="#7cc36a"/>
+  <rect y="380" width="800" height="10" fill="#5aa64c"/>
+  <g fill="#2f7f4f" stroke="#1f5f3f" stroke-width="4">
+    <path d="M110 250 L156 316 L64 316 Z"/><path d="M110 284 L150 344 L70 344 Z"/><path d="M110 318 L142 372 L78 372 Z"/>
+    <path d="M196 280 L232 330 L160 330 Z"/><path d="M196 306 L228 356 L164 356 Z"/><path d="M196 332 L222 376 L170 376 Z"/>
+    <path d="M690 262 L738 330 L642 330 Z"/><path d="M690 298 L732 360 L648 360 Z"/><path d="M690 334 L724 386 L656 386 Z"/>
+    <path d="M760 296 L794 344 L726 344 Z"/><path d="M760 322 L790 368 L730 368 Z"/>
+  </g>
+  <rect x="104" y="330" width="12" height="52" fill="#8a5a2f"/><rect x="190" y="356" width="12" height="26" fill="#8a5a2f"/>
+  <rect x="684" y="344" width="12" height="38" fill="#8a5a2f"/><rect x="754" y="356" width="12" height="26" fill="#8a5a2f"/>
+</svg>`
+    },
+    {
+      id: "waterfall",
+      name: "Waterfall",
+      cues: ["white cascading water from cliff", "rocks at bottom", "mist/spray around"],
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A waterfall of white cascading water falling from a cliff with rocks at the bottom and mist around">
+  <rect width="800" height="450" fill="#bfe3f5"/>
+  <path d="M0 390 L0 110 L150 70 L286 196 L286 390 Z" fill="#9a8a72" stroke="#6a5a42" stroke-width="6"/>
+  <path d="M800 390 L800 110 L650 70 L514 196 L514 390 Z" fill="#a89880" stroke="#6a5a42" stroke-width="6"/>
+  <path d="M286 196 L286 390 L514 390 L514 196 Q400 236 286 196 Z" fill="#8a7a62"/>
+  <rect x="300" y="120" width="200" height="40" fill="#5fb8dd" stroke="#3a8fc0" stroke-width="4"/>
+  <path d="M300 150 Q320 160 300 170 Q320 180 300 190 Q320 200 300 210 Q320 220 300 230 Q320 240 300 250 Q320 260 300 270 Q320 280 300 290 Q320 300 300 310 Q320 320 300 330 Q320 340 300 350 Q320 360 300 372 L500 372 Q480 360 500 350 Q480 340 500 330 Q480 320 500 310 Q480 300 500 290 Q480 280 500 270 Q480 260 500 250 Q480 240 500 230 Q480 220 500 210 Q480 200 500 190 Q480 180 500 170 Q480 160 500 150 Z" fill="#eaf6ff" stroke="#9fd8ea" stroke-width="4"/>
+  <g stroke="#bfe3f5" stroke-width="6"><path d="M340 160 v190 M400 150 v200 M460 160 v190"/></g>
+  <rect y="372" width="800" height="78" fill="#5aa85a"/>
+  <ellipse cx="400" cy="392" rx="240" ry="48" fill="#5fb8dd" stroke="#3a8fc0" stroke-width="6"/>
+  <g fill="#8a8a92" stroke="#5a5a62" stroke-width="4">
+    <ellipse cx="200" cy="404" rx="56" ry="30"/>
+    <ellipse cx="610" cy="404" rx="60" ry="32"/>
+    <ellipse cx="300" cy="424" rx="40" ry="22"/>
+    <ellipse cx="500" cy="426" rx="46" ry="24"/>
+  </g>
+  <g fill="#ffffff" opacity="0.85">
+    <circle cx="360" cy="360" r="22"/><circle cx="442" cy="356" r="26"/><circle cx="400" cy="330" r="18"/><circle cx="320" cy="392" r="20"/><circle cx="482" cy="390" r="22"/>
+  </g>
+  <g fill="#2f7f4f" stroke="#1f5f3f" stroke-width="4">
+    <path d="M60 70 L104 130 L16 130 Z"/><path d="M60 100 L96 152 L24 152 Z"/>
+    <path d="M740 70 L784 130 L696 130 Z"/><path d="M740 100 L776 152 L704 152 Z"/>
+  </g>
+</svg>`
+    },
+    {
+      id: "village-well",
+      name: "Village Well",
+      cues: ["circular stone well", "rope with pulley on top", "wooden bucket hanging"],
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A circular stone village well with a rope and pulley on top and a wooden bucket hanging from the rope">
+  <rect width="800" height="450" fill="#cfe8f5"/>
+  <rect y="300" width="800" height="150" fill="#7cc36a"/>
+  <rect y="300" width="800" height="10" fill="#5aa64c"/>
+  <rect x="280" y="230" width="240" height="150" fill="#b8b0a0" stroke="#7a7264" stroke-width="6"/>
+  <g stroke="#8a8274" stroke-width="4">
+    <path d="M280 270 h240 M280 310 h240 M280 350 h240"/>
+    <path d="M340 230 v150 M400 230 v150 M460 230 v150"/>
+  </g>
+  <ellipse cx="400" cy="230" rx="130" ry="38" fill="#cfc7b8" stroke="#7a7264" stroke-width="6"/>
+  <ellipse cx="400" cy="232" rx="96" ry="26" fill="#3a6a8a" stroke="#2a4a60" stroke-width="5"/>
+  <rect x="286" y="80" width="18" height="150" fill="#8a5a2f" stroke="#5a3f1f" stroke-width="4"/>
+  <rect x="496" y="80" width="18" height="150" fill="#8a5a2f" stroke="#5a3f1f" stroke-width="4"/>
+  <rect x="286" y="80" width="228" height="18" rx="4" fill="#a9773f" stroke="#5a3f1f" stroke-width="4"/>
+  <circle cx="400" cy="130" r="30" fill="#c98a3a" stroke="#8a5a1f" stroke-width="5"/>
+  <circle cx="400" cy="130" r="8" fill="#5a3f1f"/>
+  <path d="M400 100 v60 M370 130 h60 M379 109 l42 42 M421 109 l-42 42" stroke="#8a5a1f" stroke-width="4"/>
+  <path d="M380 96 q20 -22 40 0" fill="none" stroke="#5a3f1f" stroke-width="6"/>
+  <path d="M400 158 v34" stroke="#6b4a2f" stroke-width="5"/>
+  <path d="M378 192 L422 192 L414 236 L386 236 Z" fill="#b5793f" stroke="#7a4a1f" stroke-width="5"/>
+  <path d="M382 200 L418 200" stroke="#7a4a1f" stroke-width="4"/>
+  <path d="M430 100 L452 122 L452 140" fill="none" stroke="#8a5a1f" stroke-width="7"/>
 </svg>`
     }
   ];

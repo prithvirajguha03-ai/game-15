@@ -25,7 +25,7 @@
 
   <g>
     <rect x="80" y="70" width="180" height="52" fill="#ffffff" stroke="#2f6f8f" stroke-width="5"/>
-    <rect x="100" y="86" width="140" height="20" rx="6" fill="#2f6f8f"/>
+    <text x="170" y="106" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="bold" fill="#2f6f8f" text-anchor="middle" letter-spacing="2">STATION</text>
     <rect x="120" y="122" width="14" height="60" fill="#8d8578"/>
     <rect x="206" y="122" width="14" height="60" fill="#8d8578"/>
   </g>
@@ -45,5 +45,20 @@
     <rect x="240" y="360" width="46" height="56" rx="4"/><rect x="350" y="360" width="46" height="56" rx="4"/>
     <rect x="460" y="360" width="46" height="56" rx="4"/><rect x="570" y="360" width="46" height="56" rx="4"/>
     <rect x="680" y="360" width="46" height="56" rx="4"/>
+  </g>
+  <g>
+    <rect x="712" y="148" width="6" height="22" fill="#6f7d88"/>
+    <circle cx="715" cy="188" r="20" fill="#ffffff" stroke="#6f7d88" stroke-width="4"/>
+    <path d="M715 174 v14 h10" stroke="#3a4247" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+  <g>
+    <circle cx="300" cy="252" r="13" fill="#f0c9a0" stroke="#6f4d33" stroke-width="2"/>
+    <rect x="288" y="262" width="24" height="34" rx="7" fill="#3f8fd0" stroke="#2c6699" stroke-width="2"/>
+    <rect x="292" y="296" width="7" height="16" fill="#3a4247"/><rect x="302" y="296" width="7" height="16" fill="#3a4247"/>
+    <rect x="316" y="272" width="28" height="30" rx="4" fill="#c98a54" stroke="#8a5a34" stroke-width="3"/>
+    <path d="M322 272 v30 M338 272 v30" stroke="#8a5a34" stroke-width="2"/>
+    <circle cx="360" cy="256" r="12" fill="#f0c9a0" stroke="#6f4d33" stroke-width="2"/>
+    <rect x="349" y="266" width="22" height="30" rx="6" fill="#c4483f" stroke="#8f2f28" stroke-width="2"/>
+    <rect x="353" y="296" width="6" height="16" fill="#3a4247"/><rect x="363" y="296" width="6" height="16" fill="#3a4247"/>
   </g>
 </svg>

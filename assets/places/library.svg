@@ -8,6 +8,11 @@
   <rect y="360" width="800" height="90" fill="#c9b494"/>
   <path d="M0 360 h800" stroke="#ab9676" stroke-width="4"/>
   <path d="M0 0 h800 v44 h-800 z" fill="#e6d8bb"/>
+  <g fill="#6f4526">
+    <path d="M292 32 h12 v-14 h-12 z"/><path d="M306 32 h12 v-14 h-12 z"/>
+    <path d="M298 18 l6 -8 l6 8 z"/>
+  </g>
+  <text x="400" y="32" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="bold" fill="#6f4526" text-anchor="middle" letter-spacing="5">LIBRARY</text>
 
   <g>
     <rect x="60" y="70" width="160" height="252" fill="#8a5a34"/>
@@ -76,5 +81,16 @@
     <rect x="560" y="330" width="200" height="14" rx="6" fill="#a97c50"/>
     <rect x="576" y="344" width="14" height="18" fill="#8a5a34"/>
     <rect x="730" y="344" width="14" height="18" fill="#8a5a34"/>
+  </g>
+  <g>
+    <circle cx="400" cy="320" r="16" fill="#f0c9a0" stroke="#6f4d33" stroke-width="3"/>
+    <path d="M384 314 q16 -14 32 0 z" fill="#4a3626"/>
+    <rect x="386" y="336" width="28" height="40" rx="8" fill="#4f8f4f" stroke="#35702f" stroke-width="2"/>
+    <rect x="376" y="342" width="12" height="26" rx="5" fill="#4f8f4f"/>
+    <rect x="412" y="342" width="12" height="26" rx="5" fill="#4f8f4f"/>
+    <path d="M380 372 L420 372 L410 384 L390 384 Z" fill="#e6d6b6" stroke="#8a5a34" stroke-width="2"/>
+    <path d="M400 372 v12" stroke="#8a5a34" stroke-width="2"/>
+    <rect x="388" y="384" width="8" height="14" fill="#3a4247"/>
+    <rect x="404" y="384" width="8" height="14" fill="#3a4247"/>
   </g>
 </svg>

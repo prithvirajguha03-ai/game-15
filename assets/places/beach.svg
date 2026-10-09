@@ -47,4 +47,18 @@
   <g fill="#e2c08a">
     <ellipse cx="700" cy="404" rx="26" ry="9"/><ellipse cx="760" cy="424" rx="20" ry="7"/>
   </g>
+  <g>
+    <circle cx="250" cy="418" r="24" fill="#ffffff" stroke="#3a4247" stroke-width="3"/>
+    <path d="M250 394 a24 24 0 0 1 0 48 z" fill="#e2574c"/>
+    <path d="M250 394 a24 24 0 0 0 -17 41 z" fill="#e2b23c"/>
+    <path d="M250 394 a17 24 0 0 0 0 48 z" fill="#3f8fd0"/>
+  </g>
+  <g>
+    <rect x="418" y="416" width="86" height="26" rx="4" fill="#7a5aa8" stroke="#5a3f88" stroke-width="2"/>
+    <path d="M430 416 v26 M446 416 v26 M462 416 v26 M478 416 v26" stroke="#f0f0f8" stroke-width="4"/>
+  </g>
+  <g>
+    <polygon points="560,412 566,424 580,426 569,434 573,448 560,439 547,448 551,434 540,426 554,424" fill="#e2574c" stroke="#a53a32" stroke-width="2"/>
+    <circle cx="560" cy="430" r="3" fill="#ffe9a8"/>
+  </g>
 </svg>

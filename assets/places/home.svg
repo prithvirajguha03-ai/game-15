@@ -50,4 +50,23 @@
     <rect x="108" y="306" width="20" height="24" rx="4" fill="#b5623a"/>
     <rect x="746" y="306" width="20" height="24" rx="4" fill="#c2703f"/>
   </g>
+  <g>
+    <rect x="146" y="230" width="42" height="20" rx="4" fill="#ffffff" stroke="#7f9fb2" stroke-width="3"/>
+    <text x="167" y="246" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#3f5d70" text-anchor="middle">1</text>
+  </g>
+  <g>
+    <rect x="556" y="286" width="12" height="46" fill="#8a5a34"/>
+    <rect x="536" y="262" width="52" height="34" rx="6" fill="#c4483f" stroke="#8f2f28" stroke-width="3"/>
+    <rect x="548" y="274" width="26" height="6" rx="3" fill="#f2dcae"/>
+    <path d="M588 272 v-16 h12 v18" fill="#e2b23c" stroke="#b5871f" stroke-width="2"/>
+  </g>
+  <g>
+    <circle cx="350" cy="250" r="14" fill="#f0c9a0" stroke="#6f4d33" stroke-width="3"/>
+    <path d="M336 244 q14 -12 28 0 z" fill="#4a3626"/>
+    <rect x="338" y="262" width="24" height="38" rx="6" fill="#4f8f4f" stroke="#35702f" stroke-width="2"/>
+    <rect x="330" y="266" width="10" height="24" rx="5" fill="#4f8f4f"/>
+    <rect x="360" y="266" width="10" height="24" rx="5" fill="#4f8f4f"/>
+    <rect x="342" y="300" width="7" height="22" fill="#3a4247"/>
+    <rect x="352" y="300" width="7" height="22" fill="#3a4247"/>
+  </g>
 </svg>

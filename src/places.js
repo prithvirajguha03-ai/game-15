@@ -9,6 +9,7 @@
   var PLACES = [
     {
       id: "school",
+      difficulty: "simple",
       name: "School",
       cues: ["SCHOOL sign", "blackboard", "bell", "flag", "children with backpacks"],
       svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A school with a SCHOOL sign, a bell at the entrance, a blackboard in the window, a flagpole and children with backpacks">
@@ -104,6 +105,7 @@
     },
     {
       id: "hospital",
+      difficulty: "simple",
       name: "Hospital",
       cues: ["red cross", "H sign", "doctor", "ambulance"],
       svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A hospital building with a large red cross sign, an H signboard, a doctor in a white coat and an ambulance parked outside">
@@ -164,6 +166,7 @@
     },
     {
       id: "home",
+      difficulty: "simple",
       name: "Home",
       cues: ["pitched roofs", "mailbox", "house number", "garden gate"],
       svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A residential street of houses with pitched roofs, a garden gate and potted plants">
@@ -241,6 +244,7 @@
     },
     {
       id: "railway-station",
+      difficulty: "simple",
       name: "Railway Station",
       cues: ["STATION sign", "train", "tracks", "clock", "passengers"],
       svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A railway station platform with a train, platform canopy, signboard and tracks">
@@ -310,6 +314,7 @@
     },
     {
       id: "community-centre",
+      difficulty: "simple",
       name: "Community Centre",
       cues: ["clock tower", "COMMUNITY CENTRE signs", "banner flags", "steps"],
       svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A community centre with a clock tower, banner and steps outside">
@@ -376,6 +381,7 @@
     },
     {
       id: "beach",
+      difficulty: "simple",
       name: "Beach",
       cues: ["sea and waves", "palm tree", "sun umbrella", "sandcastle", "beach ball"],
       svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A beach with sea, waves, a palm tree, sun umbrella and sandcastle">
@@ -445,6 +451,7 @@
     },
     {
       id: "library",
+      difficulty: "simple",
       name: "Library",
       cues: ["bookcases", "rows of books", "reading table", "LIBRARY sign"],
       svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A library with tall bookcases, reading tables and rows of books">
@@ -546,6 +553,7 @@
     },
     {
       id: "bus-stop",
+      difficulty: "simple",
       name: "Bus Stop",
       cues: ["bus stop pole", "route 42 plate", "front-view bus", "bench and passenger", "timetable"],
       svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A bus stop with a route 42 sign, a bench with a waiting passenger, a timetable shelter and a bus arriving with route 42 on the front">
@@ -619,6 +627,7 @@
     },
     {
       id: "street",
+      difficulty: "simple",
       name: "Street",
       cues: ["road", "zebra crossing", "parked cars", "lamp post", "STREET sign"],
       svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A residential street with parked cars, a lamp post, crossing and pavement">
@@ -691,6 +700,7 @@
     },
     {
       id: "garden",
+      difficulty: "simple",
       name: "Garden",
       cues: ["greenhouse", "shed", "raised beds", "watering cans", "wheelbarrow"],
       svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A community garden with raised beds, a greenhouse, watering cans and a garden shed">
@@ -773,6 +783,7 @@
     },
     {
       id: "police-station",
+      difficulty: "simple",
       name: "Police Station",
       cues: ["khaki building", "police car", "blue-uniform figure"],
       svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A khaki police station with a POLICE sign and blue beacon, a white and blue police car with a light bar, and an officer in a blue uniform">
@@ -827,6 +838,7 @@
     },
     {
       id: "fire-station",
+      difficulty: "simple",
       name: "Fire Station",
       cues: ["red fire truck", "ladder", "fire helmet"],
       svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A red fire station with FIRE sign and garage doors, a red fire truck with a silver ladder on top, and a firefighter wearing a yellow helmet">
@@ -887,6 +899,7 @@
     },
     {
       id: "post-office",
+      difficulty: "simple",
       name: "Post Office",
       cues: ["red post box", "envelope icon", "mail van"],
       svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A post office with a POST OFFICE sign, a big envelope icon on the wall, a red pillar post box and a yellow mail van">
@@ -930,6 +943,7 @@
     },
     {
       id: "bank",
+      difficulty: "simple",
       name: "Bank",
       cues: ["ATM machine", "rupee signboard", "queue of people"],
       svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A bank with columns and a rupee symbol signboard, an ATM machine on the right and three people queuing in front">
@@ -979,6 +993,7 @@
     },
     {
       id: "airport",
+      difficulty: "simple",
       name: "Airport",
       cues: ["airplane", "control tower", "runway"],
       svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="An airport scene with a white and blue airplane flying over a runway with a dashed centre line and a control tower with a radar on the right">
@@ -1025,6 +1040,7 @@
     },
     {
       id: "shop",
+      difficulty: "normal",
       name: "Shop",
       cues: ["single storefront with striped awning", "shopkeeper behind counter", "products on shelf"],
       svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A single small shop with a striped awning and a SHOP sign, a shopkeeper behind the counter and colourful products on shelves">
@@ -1071,6 +1087,7 @@
     },
     {
       id: "market",
+      difficulty: "normal",
       name: "Market",
       cues: ["multiple stalls with colourful canopies", "vegetable baskets in front", "crowd of people"],
       svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="An open air market with four colourful canopy stalls, vegetable baskets and a crowd of shoppers, under a MARKET banner">
@@ -1125,6 +1142,7 @@
     },
     {
       id: "grocery-store",
+      difficulty: "normal",
       name: "Grocery Store",
       cues: ["rice bags stacked", "pulses in open sacks", "weighing scale on counter"],
       svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="Inside a grocery store with a GROCERY sign, a shelf of packaged goods, stacked rice sacks, open sacks of pulses and a weighing scale on the counter">
@@ -1184,6 +1202,7 @@
     },
     {
       id: "bakery",
+      difficulty: "normal",
       name: "Bakery",
       cues: ["bread loaves and buns on display", "oven with chimney", "chef with tall white hat"],
       svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A bakery with a BAKERY sign, a brick oven with a chimney, loaves and buns on display and a chef in a tall white hat">
@@ -1236,6 +1255,7 @@
     },
     {
       id: "sweet-shop",
+      difficulty: "normal",
       name: "Sweet Shop",
       cues: ["trays of colourful mithai", "glass display counter", "silver foil pieces"],
       svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A sweet shop with a SWEETS sign, a glass display counter full of colourful laddoo and barfi sweets and silver foil pieces">
@@ -1275,6 +1295,7 @@
     },
     {
       id: "tea-stall",
+      difficulty: "normal",
       name: "Tea Stall",
       cues: ["large kettle with steam", "small cups on tray", "wooden bench with a person"],
       svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A tea stall with a TEA sign, a big kettle with steam, a tray of small cups and a wooden bench with a person sitting">
@@ -1326,6 +1347,7 @@
     },
     {
       id: "vegetable-market",
+      difficulty: "normal",
       name: "Vegetable Market",
       cues: ["green vegetables in baskets", "vendor figure", "weighing scale"],
       svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A vegetable market with a SABZI MANDI sign, baskets of green vegetables, a vendor and a weighing scale">
@@ -1392,6 +1414,7 @@
     },
     {
       id: "fruit-market",
+      difficulty: "normal",
       name: "Fruit Market",
       cues: ["mangoes and bananas in a cart", "fruit vendor", "colourful fruit pile"],
       svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A fruit market with a FRUITS sign, a wooden cart piled with colourful mangoes and bananas, a fruit vendor and a pile of fruit">
@@ -1446,6 +1469,7 @@
     },
     {
       id: "flower-shop",
+      difficulty: "normal",
       name: "Flower Shop",
       cues: ["flower garlands hanging", "roses in pots", "flower vendor arranging"],
       svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A flower shop with a FLOWERS sign, hanging flower garlands, roses in pots and a flower vendor arranging a bouquet">
@@ -1503,6 +1527,7 @@
     },
     {
       id: "bookstore",
+      difficulty: "normal",
       name: "Bookstore",
       cues: ["books on wooden shelves", "reading chair with book", "stack of books on floor"],
       svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A bookstore with a BOOKS sign, wooden shelves full of colourful books, a red reading armchair with an open book and a stack of books on the floor">
@@ -1573,6 +1598,7 @@
     },
     {
       id: "temple",
+      difficulty: "normal",
       name: "Temple",
       cues: ["shikhara/dome with small flag on top", "diya (oil lamp) glowing near entrance", "hanging bell at the doorway"],
       svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A Hindu temple with a tall shikhara tower topped by a flag, a glowing diya near the entrance and a hanging bell at the doorway">
@@ -1604,6 +1630,7 @@
     },
     {
       id: "mosque",
+      difficulty: "normal",
       name: "Mosque",
       cues: ["large dome", "tall minaret", "crescent moon symbol on top"],
       svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A mosque with a large green dome, a tall minaret and a crescent moon symbol on top">
@@ -1632,6 +1659,7 @@
     },
     {
       id: "church",
+      difficulty: "normal",
       name: "Church",
       cues: ["cross on top of steeple", "pointed roof", "stained-glass arched window"],
       svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A church with a cross on top of a steeple, a pointed roof and a colourful stained-glass arched window">
@@ -1660,6 +1688,7 @@
     },
     {
       id: "gurudwara",
+      difficulty: "normal",
       name: "Gurudwara",
       cues: ["Nishan Sahib triangular flag on tall pole", "golden dome", "arched entrance"],
       svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A gurudwara with a golden dome, an arched entrance and a tall Nishan Sahib pole with a triangular flag">
@@ -1685,6 +1714,7 @@
     },
     {
       id: "monastery",
+      difficulty: "normal",
       name: "Monastery",
       cues: ["colorful prayer flags strung across", "monk in saffron robe", "prayer wheels at base"],
       svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A monastery with colourful prayer flags strung across the sky, a monk in a saffron robe and a row of prayer wheels at the base">
@@ -1725,6 +1755,7 @@
     },
     {
       id: "community-hall",
+      difficulty: "difficult",
       name: "Community Hall",
       cues: ["banner saying \"COMMUNITY HALL\"", "stage with podium", "rows of chairs"],
       svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A community hall with a banner reading COMMUNITY HALL, a stage with a podium and rows of chairs">
@@ -1773,6 +1804,7 @@
     },
     {
       id: "wedding-hall",
+      difficulty: "difficult",
       name: "Wedding Hall",
       cues: ["decorated mandap with flowers", "string lights hanging", "floral arch at entrance"],
       svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A wedding hall with a flower-decorated mandap, string lights hanging and a floral arch at the entrance">
@@ -1819,6 +1851,7 @@
     },
     {
       id: "museum",
+      difficulty: "difficult",
       name: "Museum",
       cues: ["artifacts in glass display cases", "\"MUSEUM\" signboard", "guide figure with a stick"],
       svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A museum with artifacts inside glass display cases, a MUSEUM signboard and a guide holding a pointer stick">
@@ -1852,6 +1885,7 @@
     },
     {
       id: "cinema-hall",
+      difficulty: "difficult",
       name: "Cinema Hall",
       cues: ["big screen with film strip border", "popcorn bucket", "ticket counter"],
       svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A cinema hall with a big screen bordered like a film strip, a popcorn bucket and a ticket counter">
@@ -1883,6 +1917,7 @@
     },
     {
       id: "stadium",
+      difficulty: "difficult",
       name: "Stadium",
       cues: ["cricket pitch in center", "tiered stands with crowd", "large scoreboard"],
       svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A cricket stadium with a pitch in the centre, tiered stands filled with a crowd and a large scoreboard">
@@ -1917,6 +1952,7 @@
     },
     {
       id: "park",
+      difficulty: "difficult",
       name: "Park",
       cues: ["2-3 trees with green canopies", "wooden bench", "small fountain in center"],
       svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A calm park with green trees, a wooden bench and a small fountain in the centre">
@@ -1947,6 +1983,7 @@
     },
     {
       id: "playground",
+      difficulty: "difficult",
       name: "Playground",
       cues: ["swing set with chains", "slide (blue/red)", "2 children playing"],
       svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="An active playground with a swing set, a blue and red slide and two children playing">
@@ -1976,6 +2013,7 @@
     },
     {
       id: "farm",
+      difficulty: "difficult",
       name: "Farm",
       cues: ["tractor (red/green) in field", "rows of crops", "scarecrow with hat"],
       svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A farm with a red tractor, neat rows of crops and a scarecrow wearing a hat">
@@ -2018,6 +2056,7 @@
     },
     {
       id: "rice-field",
+      difficulty: "difficult",
       name: "Rice Field",
       cues: ["green paddy plants in water", "farmer with bent back planting", "muddy field"],
       svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A flooded muddy rice field with green paddy plants and a farmer with a bent back planting">
@@ -2065,6 +2104,7 @@
     },
     {
       id: "tea-garden",
+      difficulty: "difficult",
       name: "Tea Garden",
       cues: ["rows of rounded tea bushes on slope", "plucker with basket on back", "tea leaves in basket"],
       svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A tea garden with neat rows of rounded tea bushes on a green slope and a plucker carrying a basket of tea leaves">
@@ -2096,6 +2136,7 @@
     },
     {
       id: "river-ghat",
+      difficulty: "difficult",
       name: "River Ghat",
       cues: ["stone steps leading down to water", "small wooden boat", "diya floating on water"],
       svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A river ghat with stone steps leading down to the water, a small wooden boat and a diya floating on the water">
@@ -2137,6 +2178,7 @@
     },
     {
       id: "pond",
+      difficulty: "difficult",
       name: "Pond",
       cues: ["still water with lotus flowers", "ducks swimming", "green banks"],
       svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A pond of still water with pink lotus flowers, ducks swimming and green banks">
@@ -2180,6 +2222,7 @@
     },
     {
       id: "hill",
+      difficulty: "difficult",
       name: "Hill",
       cues: ["pointed mountain peaks", "white clouds around top", "pine trees at base"],
       svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="Pointed green hills with white clouds around the peaks and pine trees at the base">
@@ -2210,6 +2253,7 @@
     },
     {
       id: "waterfall",
+      difficulty: "difficult",
       name: "Waterfall",
       cues: ["white cascading water from cliff", "rocks at bottom", "mist/spray around"],
       svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A waterfall of white cascading water falling from a cliff with rocks at the bottom and mist around">
@@ -2239,6 +2283,7 @@
     },
     {
       id: "village-well",
+      difficulty: "difficult",
       name: "Village Well",
       cues: ["circular stone well", "rope with pulley on top", "wooden bucket hanging"],
       svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A circular stone village well with a rope and pulley on top and a wooden bucket hanging from the rope">
@@ -2267,6 +2312,7 @@
     },
     {
       id: "hotel",
+      difficulty: "difficult",
       name: "Hotel",
       cues: ["\"HOTEL\" signboard above entrance", "reception desk with bell", "uniformed staff figure"],
       svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A large hotel with a HOTEL signboard above the entrance, a reception desk with a bell and a uniformed staff member">
@@ -2299,6 +2345,7 @@
     },
     {
       id: "guest-house",
+      difficulty: "difficult",
       name: "Guest House",
       cues: ["small cozy building with \"GUEST HOUSE\" sign", "garden with flowers in front", "two windows with curtains"],
       svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A small cozy guest house with a GUEST HOUSE sign, two curtained windows and a flower garden in front">
@@ -2330,6 +2377,7 @@
     },
     {
       id: "hostel",
+      difficulty: "difficult",
       name: "Hostel",
       cues: ["bunk bed visible through window", "lockers beside bed", "backpack on floor"],
       svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A hostel room with a bunk bed, lockers beside the bed and a backpack on the floor">
@@ -2365,6 +2413,7 @@
     },
     {
       id: "restaurant",
+      difficulty: "difficult",
       name: "Restaurant",
       cues: ["menu board outside entrance", "chef figure with tall hat", "fork-and-spoon icon on signboard"],
       svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A sit-down restaurant with a menu board, a chef in a tall hat and a signboard with a fork-and-spoon icon">
@@ -2407,6 +2456,7 @@
     },
     {
       id: "dhaba",
+      difficulty: "difficult",
       name: "Dhaba",
       cues: ["parked truck beside", "charpai (woven cot) with person sitting", "tandoor (clay oven) with smoke"],
       svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A roadside dhaba with a parked truck, a tandoor clay oven with smoke and a charpai cot with a person sitting on it">
@@ -2450,6 +2500,7 @@
     },
     {
       id: "cafe",
+      difficulty: "difficult",
       name: "Cafe",
       cues: ["large coffee cup icon on signboard", "cozy sofa by window", "books on a shelf"],
       svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A cosy cafe with a large coffee cup icon on the signboard, a sofa by the window and books on a shelf">
@@ -2483,6 +2534,7 @@
     },
     {
       id: "food-court",
+      difficulty: "difficult",
       name: "Food Court",
       cues: ["multiple food counters in a row", "trays with food on tables", "people carrying trays"],
       svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A food court with several food counters in a row, tables with food trays and people carrying trays">
@@ -2547,6 +2599,7 @@
     },
     {
       id: "barber-shop",
+      difficulty: "difficult",
       name: "Barber Shop",
       cues: ["barber chair with mirror", "scissors and comb icon on signboard", "barber figure with apron"],
       svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A barber shop with a barber chair in front of a mirror, a signboard with a scissors and comb icon and a barber wearing an apron">
@@ -2583,6 +2636,7 @@
     },
     {
       id: "tailor-shop",
+      difficulty: "difficult",
       name: "Tailor Shop",
       cues: ["sewing machine on table", "measuring tape around neck of tailor", "fabric rolls stacked"],
       svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A tailor shop with a sewing machine on a table, a tailor with a measuring tape around his neck and stacked rolls of fabric">
@@ -2624,6 +2678,7 @@
     },
     {
       id: "photo-studio",
+      difficulty: "difficult",
       name: "Photo Studio",
       cues: ["camera on tripod", "painted backdrop with clouds", "photographer figure behind camera"],
       svg: `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="A photo studio with a camera on a tripod, a painted backdrop with clouds and a photographer standing behind the camera">
